@@ -18,6 +18,10 @@ from .MyCustomSocket import (MyCustomSocket)
 from .node_group_items import (node_group_items)
 from .MyNodeCategory import (MyNodeCategory)
 from .geometry_node_group_empty_new import (geometry_node_group_empty_new)
+from nodeitems_builtins import (geometry_node_categories)
+
+
+
 from bpy.types import NodeTree, Node, NodeSocket
 
 ### Node Categories ###
@@ -151,87 +155,23 @@ class ObjectMoveX(bpy.types.GeometryNode):
         return True
 
 
-geometry_node_categories = [
-    GeometryNodeCategory("GEO_KILLTUBE", "KILLTUBE", items=[
-        #NodeItemCustom(draw=group_tools_draw),
-        #geometry_node_group_empty_new(context),
-        #KungsNodeItem("MyCustomNode"),
-        NodeItem("CustomNodeType"),
-        NodeItem("CustomNodeType", label="Node A", settings={
-            "my_string_prop": repr("Lorem ipsum dolor sit amet"),
-            "my_float_prop": repr(1.0),
-        }),
-        NodeItem("CustomNodeType", label="Node B", settings={
-            "my_string_prop": repr("consectetur adipisicing elit"),
-            "my_float_prop": repr(2.0),
-        }),
-    ]),
-    # Geometry Nodes
-    GeometryNodeCategory("GEO_ATTRIBUTE", "Attributezzzzz", items=[
-        #NodeItemCustom(draw=group_tools_draw),
-        #geometry_node_group_empty_new(context),
-        #KungsNodeItem("MyCustomNode"),
-        #NodeItem("CustomNodeType"),
-        #NodeItem("GeometryNodeAttributeRandomize"),
-        #NodeItem("GeometryNodeAttributeRandomize"),
-        NodeItem("GeometryNodeAttributeRandomize"),
-        NodeItem("GeometryNodeAttributeMath"),
-        NodeItem("GeometryNodeAttributeCompare"),
-        NodeItem("GeometryNodeAttributeFill"),
-        NodeItem("GeometryNodeAttributeMix"),
-        NodeItem("GeometryNodeAttributeColorRamp"),
-        NodeItem("GeometryNodeAttributeVectorMath"),
-    ]),
-    GeometryNodeCategory("GEO_COLOR", "Color", items=[
-        NodeItem("ShaderNodeValToRGB"),
-        NodeItem("ShaderNodeSeparateRGB"),
-        NodeItem("ShaderNodeCombineRGB"),
-    ]),
-    GeometryNodeCategory("GEO_GEOMETRY", "Geometry", items=[
-        NodeItem("GeometryNodeTransform"),
-        NodeItem("GeometryNodeJoinGeometry"),
-    ]),
-    GeometryNodeCategory("GEO_INPUT", "Input", items=[
-        NodeItem("GeometryNodeObjectInfo"),
-        NodeItem("FunctionNodeRandomFloat"),
-        NodeItem("ShaderNodeValue"),
-        NodeItem("FunctionNodeInputVector"),
-    ]),
-    GeometryNodeCategory("GEO_MESH", "Mesh", items=[
-        NodeItem("GeometryNodeBoolean"),
-        NodeItem("GeometryNodeTriangulate"),
-        NodeItem("GeometryNodeEdgeSplit"),
-        NodeItem("GeometryNodeSubdivisionSurface"),
-    ]),
-    GeometryNodeCategory("GEO_POINT", "Point", items=[
-        NodeItem("GeometryNodePointDistribute"),
-        NodeItem("GeometryNodePointInstance"),
-        NodeItem("GeometryNodePointSeparate"),
-        NodeItem("GeometryNodePointScale"),
-        NodeItem("GeometryNodePointTranslate"),
-        NodeItem("GeometryNodeRotatePoints"),
-        NodeItem("GeometryNodeAlignRotationToVector"),
-    ]),
-    GeometryNodeCategory("GEO_UTILITIES", "Utilities", items=[
-        NodeItem("ShaderNodeMapRange"),
-        NodeItem("ShaderNodeClamp"),
-        NodeItem("ShaderNodeMath"),
-        NodeItem("FunctionNodeBooleanMath"),
-        NodeItem("FunctionNodeFloatCompare"),
-    ]),
-    GeometryNodeCategory("GEO_VECTOR", "Vector", items=[
-        NodeItem("ShaderNodeSeparateXYZ"),
-        NodeItem("ShaderNodeCombineXYZ"),
-        NodeItem("ShaderNodeVectorMath"),
-    ]),
-    GeometryNodeCategory("GEO_GROUP", "Group", items=node_group_items),
-    GeometryNodeCategory("GEO_LAYOUT", "Layout", items=[
-        NodeItem("NodeFrame"),
-        NodeItem("NodeReroute"),
-    ]),
-    # NodeItem("FunctionNodeCombineStrings"),
-    # NodeItem("FunctionNodeGroupInstanceID"),
-]
+category_killtube = GeometryNodeCategory("GEO_KILLTUBE", "KILLTUBE", items=[
+    #NodeItemCustom(draw=group_tools_draw),
+    #geometry_node_group_empty_new(context),
+    #KungsNodeItem("MyCustomNode"),
+    NodeItem("CustomNodeType"),
+    NodeItem("CustomNodeType", label="Node A", settings={
+        "my_string_prop": repr("Lorem ipsum dolor sit amet"),
+        "my_float_prop": repr(1.0),
+    }),
+    NodeItem("CustomNodeType", label="Node B", settings={
+        "my_string_prop": repr("consectetur adipisicing elit"),
+        "my_float_prop": repr(2.0),
+    }),
+])
+
+my_geometry_node_categories = geometry_node_categories.copy()
+my_geometry_node_categories.append(category_killtube)
 
 classes = (
     #MyCustomTree,
@@ -240,50 +180,26 @@ classes = (
 )
 
 def register():
-    #nodeitems_utils.register_node_categories('SHADER', shader_node_categories)
-    #nodeitems_utils.register_node_categories('COMPOSITING', compositor_node_categories)
-    #nodeitems_utils.register_node_categories('TEXTURE', texture_node_categories)
-
-    #bpy.utils.register_class(KungsNodeItem)
-    #bpy.utils.register_class(MyCustomNode)
-    #bpy.utils.register_class(CustomNodeType)
-
-
-
-    #nodeitems_utils.register_nodes('GEOMETRY', MyCustomNode)
-    
-
     try:
         nodeitems_utils.unregister_node_categories('GEOMETRY')
     except:
         pass
-
-    from bpy.utils import register_class
     for cls in classes:
-        register_class(cls)
-
-    nodeitems_utils.register_node_categories('GEOMETRY', geometry_node_categories)
-
-    # Doesn't do anything it seems:
-    #try:
-    #    nodeitems_utils.unregister_node_categories('CUSTOM_NODES')
-    #except:
-    #    pass
-    #nodeitems_utils.register_node_categories('CUSTOM_NODES', node_categories)
+        bpy.utils.register_class(cls)
+    nodeitems_utils.register_node_categories('GEOMETRY', my_geometry_node_categories)
     #bpy.utils.register_class(ObjectMoveX)
 
 
 def unregister():
-    #nodeitems_utils.unregister_node_categories('SHADER')
-    #nodeitems_utils.unregister_node_categories('COMPOSITING')
-    #nodeitems_utils.unregister_node_categories('TEXTURE')
-    nodeitems_utils.unregister_node_categories('GEOMETRY')
+    try:
+        nodeitems_utils.unregister_node_categories('GEOMETRY')
+    except:
+        pass
+    # Reload the nodes, but without our 
+    nodeitems_utils.register_node_categories('GEOMETRY', geometry_node_categories)
     #bpy.utils.unregister_class(ObjectMoveX)
-    #nodeitems_utils.unregister_node_categories('CUSTOM_NODES')
-
-    from bpy.utils import unregister_class
     for cls in reversed(classes):
-        unregister_class(cls)
+        bpy.utils.unregister_class(cls)
 
 
 # This allows you to run the script directly from Blender's Text editor
