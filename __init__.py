@@ -11,78 +11,14 @@ from nodeitems_utils import (
     NodeItem,
     NodeItemCustom,
 )
-
-from .MyCustomNode import (
-    MyCustomNode
-)
+from .MyCustomNode import (MyCustomNode)
+from .MyCustomTreeNode import (MyCustomTreeNode)
+from .MyCustomTree import (MyCustomTree)
+from .MyCustomSocket import (MyCustomSocket)
+from .node_group_items import (node_group_items)
+from .MyNodeCategory import (MyNodeCategory)
+from .geometry_node_group_empty_new import (geometry_node_group_empty_new)
 from bpy.types import NodeTree, Node, NodeSocket
-
-#####
-
-
-# Implementation of custom nodes from Python
-
-
-# Derived from the NodeTree base type, similar to Menu, Operator, Panel, etc.
-class MyCustomTree(NodeTree):
-    # Description string
-    '''A custom node tree type that will show up in the editor type list'''
-    # Optional identifier string. If not explicitly defined, the python class name is used.
-    bl_idname = 'CustomTreeType'
-    # Label for nice name display
-    bl_label = "Custom Node Tree"
-    # Icon identifier
-    bl_icon = 'NODETREE'
-
-
-# Custom socket type
-class MyCustomSocket(NodeSocket):
-    # Description string
-    '''Custom node socket type'''
-    # Optional identifier string. If not explicitly defined, the python class name is used.
-    bl_idname = 'CustomSocketType'
-    # Label for nice name display
-    bl_label = "Custom Node Socket"
-
-    # Enum items list
-    my_items = (
-        ('DOWN', "Down", "Where your feet are"),
-        ('UP', "Up", "Where your head should be"),
-        ('LEFT', "Left", "Not right"),
-        ('RIGHT', "Right", "Not left"),
-    )
-
-    my_enum_prop: bpy.props.EnumProperty(
-        name="Direction",
-        description="Just an example",
-        items=my_items,
-        default='UP',
-    )
-
-    # Optional function for drawing the socket input value
-    def draw(self, context, layout, node, text):
-        if self.is_output or self.is_linked:
-            layout.label(text=text)
-        else:
-            layout.prop(self, "my_enum_prop", text=text)
-
-    # Socket color
-    def draw_color(self, context, node):
-        return (1.0, 0.4, 0.216, 0.5)
-
-
-# Mix-in class for all custom nodes in this tree type.
-# Defines a poll function to enable instantiation.
-class MyCustomTreeNode:
-    @classmethod
-    def poll(cls, ntree):
-        return ntree.bl_idname == 'CustomTreeType'
-
-
-
-
-#####
-
 
 ### Node Categories ###
 # Node categories are a python system for automatically
@@ -91,39 +27,6 @@ class MyCustomTreeNode:
 
 import nodeitems_utils
 from nodeitems_utils import NodeCategory, NodeItem
-
-# our own base class with an appropriate poll function,
-# so the categories only show up in our own tree type
-
-
-class MyNodeCategory(NodeCategory):
-    @classmethod
-    def poll(cls, context):
-        return context.space_data.tree_type == 'CustomTreeType'
-
-
-# all categories in a list
-node_categories = [
-    # identifier, label, items list
-    MyNodeCategory('SOMENODES', "Some Nodes", items=[
-        # our basic node
-        NodeItem("CustomNodeType"),
-    ]),
-    MyNodeCategory('OTHERNODES', "Other Nodes", items=[
-        # the node item can have additional settings,
-        # which are applied to new nodes
-        # NB: settings values are stored as string expressions,
-        # for this reason they should be converted to strings using repr()
-        NodeItem("CustomNodeType", label="Node A", settings={
-            "my_string_prop": repr("Lorem ipsum dolor sit amet"),
-            "my_float_prop": repr(1.0),
-        }),
-        NodeItem("CustomNodeType", label="Node B", settings={
-            "my_string_prop": repr("consectetur adipisicing elit"),
-            "my_float_prop": repr(2.0),
-        }),
-    ]),
-]
 
 
 
@@ -169,41 +72,7 @@ class GeometryNodeCategory(SortedNodeCategory):
 
 
 
-# generic node group items generator for shader, compositor, geometry and texture node groups
-def node_group_items(context):
-    if context is None:
-        return
-    space = context.space_data
-    if not space:
-        return
-    ntree = space.edit_tree
-    if not ntree:
-        return
 
-    yield NodeItemCustom(draw=group_tools_draw)
-
-    def contains_group(nodetree, group):
-        if nodetree == group:
-            return True
-        else:
-            for node in nodetree.nodes:
-                if node.bl_idname in node_tree_group_type.values() and node.node_tree is not None:
-                    if contains_group(node.node_tree, group):
-                        return True
-        return False
-
-    for group in context.blend_data.node_groups:
-        if group.bl_idname != ntree.bl_idname:
-            continue
-        # filter out recursive groups
-        if contains_group(group, ntree):
-            continue
-        # filter out hidden nodetrees
-        if group.name.startswith('.'):
-            continue
-        yield NodeItem(node_tree_group_type[group.bl_idname],
-                       group.name,
-                       {"node_tree": "bpy.data.node_groups[%r]" % group.name})
 
 
 # menu entry for node group tools
@@ -281,41 +150,8 @@ class ObjectMoveX(bpy.types.GeometryNode):
     def poll(self, node_tree):
         return True
 
-def geometry_node_group_empty_new(context):
-    group = bpy.data.node_groups.new("Geometry Nodes", 'GeometryNodeTree')
-    group.inputs.new('NodeSocketGeometry', "Geometry")
-    group.outputs.new('NodeSocketGeometry', "Geometry")
-    input_node = group.nodes.new('NodeGroupInput')
-    output_node = group.nodes.new('NodeGroupOutput')
-    output_node.is_active_output = True
-
-    input_node.select = False
-    output_node.select = False
-
-    input_node.location.x = -200 - input_node.width
-    output_node.location.x = 200
-
-    group.links.new(output_node.inputs[0], input_node.outputs[0])
-
-    return group
 
 geometry_node_categories = [
-    ## identifier, label, items list
-    #GeometryNodeCategory('GEO_SOMENODES', "Some Nodes", items=[
-    ##MyNodeCategory('GEO_SOMENODES', "Some Nodes", items=[
-    #    # our basic node
-    #    NodeItem("CustomNodeType"),
-    #]),
-    #GeometryNodeCategory('GEO_OTHERNODES', "Other Nodes", items=[
-    ##MyNodeCategory('GEO_OTHERNODES', "Other Nodes", items=[
-        # the node item can have additional settings,
-        # which are applied to new nodes
-        # NB: settings values are stored as string expressions,
-        # for this reason they should be converted to strings using repr()
-
-    #]),
-
-    #node_categories,
     GeometryNodeCategory("GEO_KILLTUBE", "KILLTUBE", items=[
         #NodeItemCustom(draw=group_tools_draw),
         #geometry_node_group_empty_new(context),
