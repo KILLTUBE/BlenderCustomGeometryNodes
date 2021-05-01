@@ -1,10 +1,14 @@
 import bpy
 
-from bpy.types import NodeTree, Node, NodeSocket
+from bpy.types import NodeTree, Node, NodeSocket, GeometryNode, GeometryNodeJoinGeometry
 
 # Derived from the Node base type.
 class MyCustomNode(
+    # 1st argument:
     Node,
+    #GeometryNode,
+    #GeometryNodeJoinGeometry
+    # 2nd Argument:
     #MyCustomTreeNode
 ):
     # === Basics ===
@@ -38,6 +42,11 @@ class MyCustomNode(
         self.outputs.new('NodeSocketColor', "are")
         self.outputs.new('NodeSocketFloat', "you")
 
+
+        
+        self.inputs.new('NodeSocketGeometry', "Geometry")
+        self.outputs.new('NodeSocketGeometry', "Geometry")
+
     # Copy function to initialize a copied node from an existing one.
     def copy(self, node):
         print("Copying from node ", node)
@@ -62,3 +71,17 @@ class MyCustomNode(
     # Explicit user label overrides this, but here we can define a label dynamically
     def draw_label(self):
         return "I am a custom node"
+
+    def update(self):
+        ''' Update on editor changes
+
+        '''
+        print("Update on editor changes")
+
+    def insert_link(self, link: 'NodeLink'):
+        ''' Handle creation of a link to or from the node
+
+        :param link: Link, Node link that will be inserted
+        :type link: 'NodeLink'
+        '''
+        print("Handle creation of a link to or from the node")

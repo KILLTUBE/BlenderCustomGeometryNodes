@@ -1,4 +1,4 @@
-# Dir: scripts/startup/
+# Original: scripts/startup/nodeitems_builtins.py
 
 # ##### BEGIN GPL LICENSE BLOCK #####
 #

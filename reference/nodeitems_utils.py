@@ -1,4 +1,4 @@
-# Dir: scripts/modules/
+# Original: scripts/modules/nodeitems_utils.py
 
 # ##### BEGIN GPL LICENSE BLOCK #####
 #
