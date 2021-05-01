@@ -46,6 +46,9 @@ class MyCustomNode(
         
         self.inputs.new('NodeSocketGeometry', "Geometry")
         self.outputs.new('NodeSocketGeometry', "Geometry")
+        # Make it global, access it like: `node = bpy.app.driver_namespace["customnode"]`
+        bpy.app.driver_namespace["customnode"] = self
+        print("INIT CUSTOM NODE", self)
 
     # Copy function to initialize a copied node from an existing one.
     def copy(self, node):

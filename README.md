@@ -6,6 +6,17 @@
 **Install**
  * Just clone this repo in your `blender-2.92.0/2.92/scripts/addons/` folder
 
+**Debugging the last added node**
+
+Just go to the scripting tab and write:
+```python
+node = bpy.app.driver_namespace["customnode"]
+```
+
+Then use autocomplete etc. like:
+
+![Console](./images/console.png)
+
 **Interesting files to learn from**
  * [Scripting tag -> Templates -> Python -> Custom Nodes](/reference/custom_nodes.py)
  * [blender-2.92.0/2.92/scripts/startup/nodeitems_builtins.py](./reference/nodeitems_builtins.py)
