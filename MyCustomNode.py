@@ -34,29 +34,42 @@ class MyCustomNode(
     # NOTE: this is not the same as the standard __init__ function in Python, which is
     #       a purely internal Python method and unknown to the node system!
     def init(self, context):
-        self.inputs.new('CustomSocketType', "Hello")
-        self.inputs.new('NodeSocketFloat', "World")
-        self.inputs.new('NodeSocketVector', "!")
+        #self.inputs.new('CustomSocketType', "Hello")
+        #self.inputs.new('NodeSocketFloat', "World")
+        #self.inputs.new('NodeSocketVector', "!")
 
-        self.outputs.new('NodeSocketColor', "How")
-        self.outputs.new('NodeSocketColor', "are")
-        self.outputs.new('NodeSocketFloat', "you")
+        #self.outputs.new('NodeSocketColor', "How")
+        #self.outputs.new('NodeSocketColor', "are")
+        #self.outputs.new('NodeSocketFloat', "you")
 
 
         
         self.inputs.new('NodeSocketGeometry', "Geometry")
         self.outputs.new('NodeSocketGeometry', "Geometry")
+
+        group = bpy.data.node_groups['Geometry Nodes']
+
+
+        #input_node = group.nodes.new('NodeGroupInput')
+        #output_node = group.nodes.new('NodeGroupOutput')
+        #output_node.is_active_output = True
+        #input_node.select = False
+        #output_node.select = False
+        #input_node.location.x = -200 - input_node.width
+        #output_node.location.x = 200
+
+        group.links.new(output_node.inputs[0], input_node.outputs[0])
+
         # Make it global, access it like: `node = bpy.app.driver_namespace["customnode"]`
         bpy.app.driver_namespace["customnode"] = self
         print("INIT CUSTOM NODE", self)
 
-    # Copy function to initialize a copied node from an existing one.
-    def copy(self, node):
-        print("Copying from node ", node)
-
-    # Free function to clean up on removal.
-    def free(self):
-        print("Removing node ", self, ", Goodbye!")
+    ## Copy function to initialize a copied node from an existing one.
+    #def copy(self, node):
+    #    print("Copying from node ", node)
+    ## Free function to clean up on removal.
+    #def free(self):
+    #    print("Removing node ", self, ", Goodbye!")
 
     # Additional buttons displayed on the node.
     def draw_buttons(self, context, layout):
@@ -88,3 +101,11 @@ class MyCustomNode(
         :type link: 'NodeLink'
         '''
         print("Handle creation of a link to or from the node")
+
+    def socket_value_update(self, context: 'Context'):
+        ''' Update after property changes
+
+        :param context: 
+        :type context: 'Context'
+        '''
+        print("Update after property changes" + str(context))
