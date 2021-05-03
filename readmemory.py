@@ -1,5 +1,5 @@
-import bpy, ctypes
-from ctypes import Structure, POINTER
+#import bpy, ctypes
+from ctypes import *
 
 
 class BezTriple(Structure):
@@ -132,14 +132,14 @@ class Nurb(Structure):
         ("charidx", ctypes.c_short),
     ]
 
+"""
 spline_ptr = bpy.context.object.data.splines[0].as_pointer()
-
 p = ctypes.POINTER(Nurb)
 p.from_address(spline_ptr)
 
 print(p)
 print(p.resolu)
-
+"""
 
 
 
@@ -321,8 +321,6 @@ def show(o):
     for field_name, field_type in o._fields_:
         print(field_name, getattr(o, field_name))
 
-o = bNodeSocket.from_address(tr.inputs[0].as_pointer())
-show(o)
 
 class SocketRef(Structure):
     _fields_ = [
@@ -335,8 +333,8 @@ class SocketRef(Structure):
 
 
 
-p = ctypes.POINTER(SocketRef)
-o = p.from_address(tr.inputs[0].as_pointer())
+#p = ctypes.POINTER(SocketRef)
+#o = p.from_address(tr.inputs[0].as_pointer())
 
 
 
@@ -373,26 +371,130 @@ class bNodeType(Structure):
         ("maxheight", c_float),
         ("nclass", c_short),
         ("flag", c_short),
+
+
+        #/* templates for static sockets */
+        #bNodeSocketTemplate *inputs, *outputs;
+        ("inputs", c_void_p),
+        ("outputs", c_void_p),
+        
+        #
+        #char storagename[64]; /* struct name for DNA */
+        ("storagename", c_char * 64),
+        #
+        #/* Main draw function for the node */
+        #void (*draw_nodetype)(const struct bContext *C,
+        #                    struct ARegion *region,
+        #                    struct SpaceNode *snode,
+        #                    struct bNodeTree *ntree,
+        #                    struct bNode *node,
+        #                    bNodeInstanceKey key);
+        ("draw_nodetype", c_void_p),
+        #/* Updates the node geometry attributes according to internal state before actual drawing */
+        #void (*draw_nodetype_prepare)(const struct bContext *C,
+        #                            struct bNodeTree *ntree,
+        #                            struct bNode *node);
+        ("draw_nodetype_prepare", c_void_p),
+        #/* Draw the option buttons on the node */
+        #void (*draw_buttons)(struct uiLayout *, struct bContext *C, struct PointerRNA *ptr);
+        ("draw_buttons", c_void_p),
+        #/* Additional parameters in the side panel */
+        #void (*draw_buttons_ex)(struct uiLayout *, struct bContext *C, struct PointerRNA *ptr);
+        ("draw_buttons_ex", c_void_p),
+        #
+        #/* Additional drawing on backdrop */
+        #void (*draw_backdrop)(
+        #  struct SpaceNode *snode, struct ImBuf *backdrop, struct bNode *node, int x, int y);
+        ("draw_backdrop", c_void_p),
+        #/**
+        #* Optional custom label function for the node header.
+        #* \note Used as a fallback when #bNode.label isn't set.
+        #*/
+        #void (*labelfunc)(struct bNodeTree *ntree, struct bNode *node, char *label, int maxlen);
+        ("labelfunc", c_void_p),
+        #/** Optional custom resize handle polling. */
+        #int (*resize_area_func)(struct bNode *node, int x, int y);
+        ("resize_area_func", c_void_p),
+        #/** Optional selection area polling. */
+        #int (*select_area_func)(struct bNode *node, int x, int y);
+        ("select_area_func", c_void_p),
+        #/** Optional tweak area polling (for grabbing). */
+        #int (*tweak_area_func)(struct bNode *node, int x, int y);
+        ("tweak_area_func", c_void_p),
+        #
+        #/** Called when the node is updated in the editor. */
+        #void (*updatefunc)(struct bNodeTree *ntree, struct bNode *node);
+        ("updatefunc", c_void_p),
+        #/** Check and update if internal ID data has changed. */
+        #void (*group_update_func)(struct bNodeTree *ntree, struct bNode *node);
+        ("group_update_func", c_void_p),
+        #
+        #/** Initialize a new node instance of this type after creation. */
+        #void (*initfunc)(struct bNodeTree *ntree, struct bNode *node);
+        ("initfunc", c_void_p),
+        #/** Free the node instance. */
+        #void (*freefunc)(struct bNode *node);
+        ("freefunc", c_void_p),
+        #/** Make a copy of the node instance. */
+        #void (*copyfunc)(struct bNodeTree *dest_ntree,
+        #               struct bNode *dest_node,
+        #               const struct bNode *src_node);
+        ("copyfunc", c_void_p),
+        #/* Registerable API callback versions, called in addition to C callbacks */
+        #void (*initfunc_api)(const struct bContext *C, struct PointerRNA *ptr);
+        ("initfunc_api", c_void_p),
+        #void (*freefunc_api)(struct PointerRNA *ptr);
+        ("freefunc_api", c_void_p),
+        #void (*copyfunc_api)(struct PointerRNA *ptr, const struct bNode *src_node);
+        ("copyfunc_api", c_void_p),
+        #
+        #/**
+        #* Can this node type be added to a node tree?
+        #* \param r_disabled_hint: Optional hint to display in the UI when the poll fails.
+        #*                         The callback can set this to a static string without having to
+        #*                         null-check it (or without setting it to null if it's not used).
+        #*                         The caller must pass a valid `const char **` and null-initialize it
+        #*                         when it's not just a dummy, that is, if it actually wants to access
+        #*                         the returned disabled-hint (null-check needed!).
+        #*/
+        #bool (*poll)(struct bNodeType *ntype, struct bNodeTree *nodetree, const char **r_disabled_hint);
+        ("poll", c_void_p),
+        #/** Can this node be added to a node tree?
+        #* \param r_disabled_hint: See `poll()`.
+        #*/
+        #bool (*poll_instance)(struct bNode *node,
+        #                    struct bNodeTree *nodetree,
+        #                    const char **r_disabled_hint);
+        ("poll_instance", c_void_p),
+        #/* optional handling of link insertion */
+        #void (*insert_link)(struct bNodeTree *ntree, struct bNode *node, struct bNodeLink *link);
+        ("insert_link", c_void_p),
+        #/* Update the internal links list, for muting and disconnect operators. */
+        #void (*update_internal_links)(struct bNodeTree *, struct bNode *node);
+        ("update_internal_links", c_void_p),
+        #void (*free_self)(struct bNodeType *ntype);
+        ("free_self", c_void_p),
+        #/* **** execution callbacks **** */
+        #NodeInitExecFunction init_exec_fn;
+        ("init_exec_fn", c_void_p),
+        #NodeFreeExecFunction free_exec_fn;
+        ("free_exec_fn", c_void_p),
+        #NodeExecFunction exec_fn;
+        ("exec_fn", c_void_p),
+        #/* gpu */
+        #NodeGPUExecFunction gpu_fn;
+        ("gpu_fn", c_void_p),
+        #/* Expands the bNode into nodes in a multi-function network, which will be evaluated later on. */
+        #NodeExpandInMFNetworkFunction expand_in_mf_network;
+        ("expand_in_mf_network", c_void_p),
+        #/* Execute a geometry node. */
+        #NodeGeometryExecFunction geometry_node_execute;
+        #("geometry_node_execute", POINTER(NodeGeometryExecFunction)),
+        ("geometry_node_execute", c_void_p),
+        #/* RNA integration */
+        #ExtensionRNA rna_ext;
         
     ]
-
-
-p = ctypes.POINTER(bNodeType)
-o = p.from_address(tr.inputs[0].as_pointer())
-o = p.from_address(tr.as_pointer())
-
-
-o = bNodeType.from_address(tr.as_pointer())
-
-o = bNodeType.from_address(bpy.types.GeometryNodeTransform.bl_rna.as_pointer())
-for field_name, field_type in o._fields_: print(field_name, getattr(o, field_name))
-
-
-
-
-
-
-
 
 class bNode(Structure):
     pass
@@ -509,6 +611,80 @@ bNode._fields_ = [
     #*/
     #float sss_id;
 ]
+
+class GeoNodeExecParamsProvider(Structure):
+    pass
+   
+GeoNodeExecParamsProvider._fields_ = [
     
+    #public:
+    #DNode dnode;
+    ("dnode", c_void_p),
+    #const PersistentDataHandleMap *handle_map = nullptr;
+    ("handle_map", c_void_p),
+    #const Object *self_object = nullptr;
+    ("self_object", c_void_p),
+    #const ModifierData *modifier = nullptr;
+    ("modifier", c_void_p),
+    #Depsgraph *depsgraph = nullptr;
+    ("depsgraph", c_void_p),
+    
+]
+    
+class GeoNodeExecParams(Structure):
+    pass
+   
+GeoNodeExecParams._fields_ = [
+    # struct bNode *next, *prev, *new_node;
+    ("provider_", POINTER(GeoNodeExecParamsProvider)),
+]
+
+
+#NodeGeometryExecFunction = CFUNCTYPE(None, POINTER(GeoNodeExecParams))
+#NodeGeometryExecFunction = WINFUNCTYPE(None, c_void_p)
+NodeGeometryExecFunction = PYFUNCTYPE(None, c_void_p)
+
+
+def py_nodeGeometryExecFunction(params):
+    pass
+    #print("11111")
+    #time.sleep(1)
+    #print("22222")
+    #time.sleep(1)
+    #print("33333")
+    #time.sleep(1)
+    #print("4444")
+    #time.sleep(1)
+    #print("55555")
+    #time.sleep(1)
+    #print("py_nodeGeometryExecFunction", params)
+    #return 0
+
+nodeGeometryExecFunction = NodeGeometryExecFunction(py_nodeGeometryExecFunction)
+
+def getAddr(func):
+    s = str(func)
+    start = s.index("0x")
+    return int(s[start:-1], 0)
+
+geonodes = bpy.data.node_groups['Geometry Nodes']
+groupinput = geonodes.nodes.get("Group Input")
+groupoutput = geonodes.nodes.get("Group Output")
+
+tr = geonodes.nodes.get("Transform")
+
+
 o = bNode.from_address(tr.as_pointer())
+"""
+o.typeinfo.contents.geometry_node_execute = getAddr(nodeGeometryExecFunction)
+
+
+
+
+
+
+o = bNodeSocket.from_address(tr.inputs[0].as_pointer())
+show(o)
+"""
+
 show(o);
