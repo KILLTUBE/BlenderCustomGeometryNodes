@@ -34,10 +34,15 @@ Then use autocomplete etc. like:
 geonodes = bpy.data.node_groups['Geometry Nodes']
 groupinput = geonodes.nodes.get("Group Input")
 groupoutput = geonodes.nodes.get("Group Output")
+
+tr = geonodes.nodes.get("Transform")
 # Remove default link
 geonodes.links.remove(geonodes.links[0])
+
 # If it exists:
 customnode = geonodes.nodes['Custom Node']
+
+
 ```
 
 **Stack trace of crash**
