@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)..;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\atomic_interns;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -111,6 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/std:c++17 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__LITTLE_ENDIAN__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -118,7 +119,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\atomic_ops.h" />
     <ClInclude Include="..\attribute_access_intern.hh" />
+    <ClInclude Include="..\BKE_anim_data.h" />
     <ClInclude Include="..\BKE_attribute.h" />
     <ClInclude Include="..\BKE_attribute_access.hh" />
     <ClInclude Include="..\BKE_attribute_math.hh" />
@@ -127,16 +130,26 @@
     <ClInclude Include="..\BKE_geometry_set.h" />
     <ClInclude Include="..\BKE_geometry_set.hh" />
     <ClInclude Include="..\BKE_geometry_set_instances.hh" />
+    <ClInclude Include="..\BKE_global.h" />
+    <ClInclude Include="..\BKE_idtype.h" />
     <ClInclude Include="..\BKE_lib_id.h" />
+    <ClInclude Include="..\BKE_lib_query.h" />
+    <ClInclude Include="..\BKE_lib_remap.h" />
+    <ClInclude Include="..\BKE_main.h" />
     <ClInclude Include="..\BKE_mesh.h" />
     <ClInclude Include="..\BKE_mesh_types.h" />
     <ClInclude Include="..\BKE_mesh_wrapper.h" />
     <ClInclude Include="..\BKE_modifier.h" />
     <ClInclude Include="..\BKE_node.h" />
     <ClInclude Include="..\BKE_node_ui_storage.hh" />
+    <ClInclude Include="..\BKE_object.h" />
+    <ClInclude Include="..\BKE_packedFile.h" />
     <ClInclude Include="..\BKE_persistent_data_handle.hh" />
     <ClInclude Include="..\BKE_pointcloud.h" />
+    <ClInclude Include="..\BKE_report.h" />
+    <ClInclude Include="..\BKE_scene.h" />
     <ClInclude Include="..\BKE_volume.h" />
+    <ClInclude Include="..\BLI_alloca.h" />
     <ClInclude Include="..\BLI_allocator.hh" />
     <ClInclude Include="..\BLI_array.hh" />
     <ClInclude Include="..\BLI_assert.h" />
@@ -144,6 +157,9 @@
     <ClInclude Include="..\BLI_compiler_attrs.h" />
     <ClInclude Include="..\BLI_compiler_compat.h" />
     <ClInclude Include="..\BLI_compiler_typecheck.h" />
+    <ClInclude Include="..\BLI_endian_switch.h" />
+    <ClInclude Include="..\BLI_endian_switch_inline.h" />
+    <ClInclude Include="..\BLI_fileops.h" />
     <ClInclude Include="..\BLI_float2.hh" />
     <ClInclude Include="..\BLI_float3.hh" />
     <ClInclude Include="..\BLI_float4x4.hh" />
@@ -170,8 +186,10 @@
     <ClInclude Include="..\BLI_math_solvers.h" />
     <ClInclude Include="..\BLI_math_statistics.h" />
     <ClInclude Include="..\BLI_math_vector.h" />
+    <ClInclude Include="..\BLI_memarena.h" />
     <ClInclude Include="..\BLI_memory_utils.hh" />
     <ClInclude Include="..\BLI_multi_value_map.hh" />
+    <ClInclude Include="..\BLI_path_util.h" />
     <ClInclude Include="..\BLI_probing_strategies.hh" />
     <ClInclude Include="..\BLI_rand.hh" />
     <ClInclude Include="..\BLI_session_uuid.h" />
@@ -179,8 +197,10 @@
     <ClInclude Include="..\BLI_set_slots.hh" />
     <ClInclude Include="..\BLI_simd.h" />
     <ClInclude Include="..\BLI_span.hh" />
+    <ClInclude Include="..\BLI_strict_flags.h" />
     <ClInclude Include="..\BLI_string.h" />
     <ClInclude Include="..\BLI_string_ref.hh" />
+    <ClInclude Include="..\BLI_system.h" />
     <ClInclude Include="..\BLI_sys_types.h" />
     <ClInclude Include="..\BLI_timeit.hh" />
     <ClInclude Include="..\BLI_user_counter.hh" />
@@ -191,41 +211,128 @@
     <ClInclude Include="..\BLI_vector_set.hh" />
     <ClInclude Include="..\BLI_vector_set_slots.hh" />
     <ClInclude Include="..\BLI_virtual_array.hh" />
+    <ClInclude Include="..\BLO_read_write.h" />
     <ClInclude Include="..\BLT_translation.h" />
     <ClInclude Include="..\ccall.h" />
+    <ClInclude Include="..\CLG_log.h" />
     <ClInclude Include="..\DEG_depsgraph.h" />
     <ClInclude Include="..\DEG_depsgraph_build.h" />
     <ClInclude Include="..\DEG_depsgraph_query.h" />
     <ClInclude Include="..\DNA_action_types.h" />
+    <ClInclude Include="..\DNA_anim_types.h" />
+    <ClInclude Include="..\DNA_armature_defaults.h" />
+    <ClInclude Include="..\DNA_armature_types.h" />
+    <ClInclude Include="..\DNA_asset_defaults.h" />
+    <ClInclude Include="..\DNA_asset_types.h" />
+    <ClInclude Include="..\DNA_boid_types.h" />
+    <ClInclude Include="..\DNA_brush_defaults.h" />
+    <ClInclude Include="..\DNA_brush_enums.h" />
+    <ClInclude Include="..\DNA_brush_types.h" />
+    <ClInclude Include="..\DNA_cachefile_defaults.h" />
+    <ClInclude Include="..\DNA_cachefile_types.h" />
+    <ClInclude Include="..\DNA_camera_defaults.h" />
+    <ClInclude Include="..\DNA_camera_types.h" />
+    <ClInclude Include="..\DNA_cloth_types.h" />
+    <ClInclude Include="..\DNA_collection_defaults.h" />
     <ClInclude Include="..\DNA_collection_types.h" />
     <ClInclude Include="..\DNA_color_types.h" />
+    <ClInclude Include="..\DNA_constraint_types.h" />
+    <ClInclude Include="..\DNA_curveprofile_types.h" />
+    <ClInclude Include="..\DNA_curve_defaults.h" />
+    <ClInclude Include="..\DNA_curve_types.h" />
     <ClInclude Include="..\DNA_customdata_types.h" />
+    <ClInclude Include="..\DNA_defaults.h" />
     <ClInclude Include="..\DNA_defs.h" />
+    <ClInclude Include="..\DNA_documentation.h" />
+    <ClInclude Include="..\DNA_dynamicpaint_types.h" />
+    <ClInclude Include="..\DNA_effect_types.h" />
+    <ClInclude Include="..\DNA_fileglobal_types.h" />
+    <ClInclude Include="..\DNA_fluid_defaults.h" />
+    <ClInclude Include="..\DNA_fluid_types.h" />
     <ClInclude Include="..\DNA_freestyle_types.h" />
+    <ClInclude Include="..\DNA_genfile.h" />
+    <ClInclude Include="..\DNA_gpencil_modifier_defaults.h" />
+    <ClInclude Include="..\DNA_gpencil_modifier_types.h" />
+    <ClInclude Include="..\DNA_gpencil_types.h" />
+    <ClInclude Include="..\DNA_gpu_types.h" />
+    <ClInclude Include="..\DNA_hair_defaults.h" />
+    <ClInclude Include="..\DNA_hair_types.h" />
     <ClInclude Include="..\DNA_ID.h" />
     <ClInclude Include="..\DNA_ID_enums.h" />
+    <ClInclude Include="..\DNA_image_defaults.h" />
     <ClInclude Include="..\DNA_image_types.h" />
+    <ClInclude Include="..\DNA_ipo_types.h" />
+    <ClInclude Include="..\DNA_key_types.h" />
+    <ClInclude Include="..\DNA_lattice_defaults.h" />
+    <ClInclude Include="..\DNA_lattice_types.h" />
     <ClInclude Include="..\DNA_layer_types.h" />
+    <ClInclude Include="..\DNA_lightprobe_defaults.h" />
+    <ClInclude Include="..\DNA_lightprobe_types.h" />
+    <ClInclude Include="..\DNA_light_defaults.h" />
+    <ClInclude Include="..\DNA_light_types.h" />
     <ClInclude Include="..\DNA_lineart_types.h" />
+    <ClInclude Include="..\DNA_linestyle_defaults.h" />
+    <ClInclude Include="..\DNA_linestyle_types.h" />
     <ClInclude Include="..\DNA_listBase.h" />
+    <ClInclude Include="..\DNA_mask_types.h" />
+    <ClInclude Include="..\DNA_material_defaults.h" />
+    <ClInclude Include="..\DNA_material_types.h" />
     <ClInclude Include="..\DNA_meshdata_types.h" />
+    <ClInclude Include="..\DNA_mesh_defaults.h" />
     <ClInclude Include="..\DNA_mesh_types.h" />
+    <ClInclude Include="..\DNA_meta_defaults.h" />
+    <ClInclude Include="..\DNA_meta_types.h" />
+    <ClInclude Include="..\DNA_modifier_defaults.h" />
     <ClInclude Include="..\DNA_modifier_types.h" />
+    <ClInclude Include="..\DNA_movieclip_defaults.h" />
     <ClInclude Include="..\DNA_movieclip_types.h" />
+    <ClInclude Include="..\DNA_nla_types.h" />
     <ClInclude Include="..\DNA_node_types.h" />
+    <ClInclude Include="..\DNA_object_defaults.h" />
     <ClInclude Include="..\DNA_object_enums.h" />
+    <ClInclude Include="..\DNA_object_fluidsim_types.h" />
+    <ClInclude Include="..\DNA_object_force_types.h" />
     <ClInclude Include="..\DNA_object_types.h" />
+    <ClInclude Include="..\DNA_outliner_types.h" />
+    <ClInclude Include="..\DNA_packedFile_types.h" />
+    <ClInclude Include="..\DNA_particle_defaults.h" />
+    <ClInclude Include="..\DNA_particle_types.h" />
+    <ClInclude Include="..\DNA_pointcache_types.h" />
+    <ClInclude Include="..\DNA_pointcloud_defaults.h" />
     <ClInclude Include="..\DNA_pointcloud_types.h" />
+    <ClInclude Include="..\DNA_rigidbody_types.h" />
+    <ClInclude Include="..\DNA_scene_defaults.h" />
     <ClInclude Include="..\DNA_scene_types.h" />
+    <ClInclude Include="..\DNA_screen_types.h" />
+    <ClInclude Include="..\DNA_sdna_types.h" />
+    <ClInclude Include="..\DNA_sequence_types.h" />
     <ClInclude Include="..\DNA_session_uuid_types.h" />
+    <ClInclude Include="..\DNA_shader_fx_types.h" />
+    <ClInclude Include="..\DNA_simulation_defaults.h" />
+    <ClInclude Include="..\DNA_simulation_types.h" />
+    <ClInclude Include="..\DNA_sound_types.h" />
+    <ClInclude Include="..\DNA_space_types.h" />
+    <ClInclude Include="..\DNA_speaker_defaults.h" />
+    <ClInclude Include="..\DNA_speaker_types.h" />
+    <ClInclude Include="..\DNA_texture_defaults.h" />
     <ClInclude Include="..\DNA_texture_types.h" />
+    <ClInclude Include="..\DNA_text_types.h" />
     <ClInclude Include="..\DNA_tracking_types.h" />
     <ClInclude Include="..\DNA_userdef_types.h" />
+    <ClInclude Include="..\DNA_vec_defaults.h" />
     <ClInclude Include="..\DNA_vec_types.h" />
+    <ClInclude Include="..\DNA_vfont_types.h" />
     <ClInclude Include="..\DNA_view2d_types.h" />
+    <ClInclude Include="..\DNA_view3d_defaults.h" />
     <ClInclude Include="..\DNA_view3d_enums.h" />
     <ClInclude Include="..\DNA_view3d_types.h" />
+    <ClInclude Include="..\DNA_volume_defaults.h" />
     <ClInclude Include="..\DNA_volume_types.h" />
+    <ClInclude Include="..\DNA_windowmanager_types.h" />
+    <ClInclude Include="..\DNA_workspace_types.h" />
+    <ClInclude Include="..\DNA_world_defaults.h" />
+    <ClInclude Include="..\DNA_world_types.h" />
+    <ClInclude Include="..\DNA_xr_types.h" />
     <ClInclude Include="..\FN_cpp_type.hh" />
     <ClInclude Include="..\FN_generic_pointer.hh" />
     <ClInclude Include="..\FN_generic_span.hh" />
@@ -234,6 +341,13 @@
     <ClInclude Include="..\GPU_material.h" />
     <ClInclude Include="..\GPU_state.h" />
     <ClInclude Include="..\GPU_texture.h" />
+    <ClInclude Include="..\IMB_imbuf.h" />
+    <ClInclude Include="..\intern\atomic_ops_ext.h" />
+    <ClInclude Include="..\intern\atomic_ops_msvc.h" />
+    <ClInclude Include="..\intern\atomic_ops_unix.h" />
+    <ClInclude Include="..\intern\atomic_ops_utils.h" />
+    <ClInclude Include="..\intern\mallocn_inline.h" />
+    <ClInclude Include="..\intern\mallocn_intern.h" />
     <ClInclude Include="..\MEM_guardedalloc.h" />
     <ClInclude Include="..\node_geometry_util.hh" />
     <ClInclude Include="..\node_util.h" />
@@ -246,15 +360,44 @@
     <ClInclude Include="..\RNA_types.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\BLI_args.c" />
+    <ClCompile Include="..\BLI_array.c" />
+    <ClCompile Include="..\BLI_assert.c" />
+    <ClCompile Include="..\BLI_dial_2d.c" />
+    <ClCompile Include="..\BLI_dynstr.c" />
+    <ClCompile Include="..\BLI_filelist.c" />
+    <ClCompile Include="..\BLI_ghash.c" />
+    <ClCompile Include="..\BLI_ghash_utils.c" />
+    <ClCompile Include="..\BLI_heap.c" />
+    <ClCompile Include="..\BLI_heap_simple.c" />
+    <ClCompile Include="..\BLI_index_range.cc" />
+    <ClCompile Include="..\BLI_kdopbvh.c" />
+    <ClCompile Include="..\BLI_linklist.c" />
+    <ClCompile Include="..\BLI_linklist_lockfree.c" />
+    <ClCompile Include="..\BLI_memarena.c" />
+    <ClCompile Include="..\BLI_memblock.c" />
+    <ClCompile Include="..\BLI_memiter.c" />
+    <ClCompile Include="..\BLI_mempool.c" />
+    <ClCompile Include="..\BLI_mmap.c" />
+    <ClCompile Include="..\BLI_timer.c" />
+    <ClCompile Include="..\dna_defaults.c" />
+    <ClCompile Include="..\dna_genfile.c" />
     <ClCompile Include="..\intern\geometry_component_instances.cc" />
     <ClCompile Include="..\intern\geometry_component_mesh.cc" />
     <ClCompile Include="..\intern\geometry_component_pointcloud.cc" />
     <ClCompile Include="..\intern\geometry_component_volume.cc" />
     <ClCompile Include="..\intern\geometry_set.cc" />
     <ClCompile Include="..\intern\geometry_set_instances.cc" />
+    <ClCompile Include="..\intern\leak_detector.cc" />
+    <ClCompile Include="..\intern\mallocn.c" />
+    <ClCompile Include="..\intern\mallocn_guarded_impl.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\intern\mallocn_lockfree_impl.c" />
     <ClCompile Include="..\intern\math_base_inline.c" />
     <ClCompile Include="..\intern\math_color_inline.c" />
     <ClCompile Include="..\intern\math_vector_inline.c" />
+    <ClCompile Include="..\intern\volume.cc" />
     <ClCompile Include="..\node_geo_transform.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
