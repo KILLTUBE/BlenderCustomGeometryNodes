@@ -111,7 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/std:c++17 %(AdditionalOptions)</AdditionalOptions>
-      <PreprocessorDefinitions>__LITTLE_ENDIAN__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__LITTLE_ENDIAN__;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -333,6 +333,8 @@
     <ClInclude Include="..\DNA_world_defaults.h" />
     <ClInclude Include="..\DNA_world_types.h" />
     <ClInclude Include="..\DNA_xr_types.h" />
+    <ClInclude Include="..\eigenvalues.h" />
+    <ClInclude Include="..\eigen_capi.h" />
     <ClInclude Include="..\FN_cpp_type.hh" />
     <ClInclude Include="..\FN_generic_pointer.hh" />
     <ClInclude Include="..\FN_generic_span.hh" />
@@ -348,6 +350,8 @@
     <ClInclude Include="..\intern\atomic_ops_utils.h" />
     <ClInclude Include="..\intern\mallocn_inline.h" />
     <ClInclude Include="..\intern\mallocn_intern.h" />
+    <ClInclude Include="..\linear_solver.h" />
+    <ClInclude Include="..\matrix.h" />
     <ClInclude Include="..\MEM_guardedalloc.h" />
     <ClInclude Include="..\node_geometry_util.hh" />
     <ClInclude Include="..\node_util.h" />
@@ -358,6 +362,7 @@
     <ClInclude Include="..\NOD_socket.h" />
     <ClInclude Include="..\RNA_access.h" />
     <ClInclude Include="..\RNA_types.h" />
+    <ClInclude Include="..\svd.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\BLI_args.c" />
@@ -382,6 +387,7 @@
     <ClCompile Include="..\BLI_timer.c" />
     <ClCompile Include="..\dna_defaults.c" />
     <ClCompile Include="..\dna_genfile.c" />
+    <ClCompile Include="..\eigenvalues.cc" />
     <ClCompile Include="..\intern\geometry_component_instances.cc" />
     <ClCompile Include="..\intern\geometry_component_mesh.cc" />
     <ClCompile Include="..\intern\geometry_component_pointcloud.cc" />
@@ -398,7 +404,32 @@
     <ClCompile Include="..\intern\math_color_inline.c" />
     <ClCompile Include="..\intern\math_vector_inline.c" />
     <ClCompile Include="..\intern\volume.cc" />
+    <ClCompile Include="..\linear_solver.cc" />
+    <ClCompile Include="..\listbase.c" />
+    <ClCompile Include="..\math_base.c" />
+    <ClCompile Include="..\math_base_inline.c" />
+    <ClCompile Include="..\math_base_safe_inline.c" />
+    <ClCompile Include="..\math_bits_inline.c" />
+    <ClCompile Include="..\math_boolean.cc" />
+    <ClCompile Include="..\math_color.c" />
+    <ClCompile Include="..\math_color_blend_inline.c" />
+    <ClCompile Include="..\math_color_inline.c" />
+    <ClCompile Include="..\math_geom.c" />
+    <ClCompile Include="..\math_geom_inline.c" />
+    <ClCompile Include="..\math_interp.c" />
+    <ClCompile Include="..\math_matrix.c" />
+    <ClCompile Include="..\math_rotation.c" />
+    <ClCompile Include="..\math_solvers.c" />
+    <ClCompile Include="..\math_statistics.c" />
+    <ClCompile Include="..\math_vec.cc" />
+    <ClCompile Include="..\math_vector.c" />
+    <ClCompile Include="..\math_vector_inline.c" />
+    <ClCompile Include="..\matrix.cc" />
+    <ClCompile Include="..\memory_utils.c" />
+    <ClCompile Include="..\mesh_boolean.cc" />
+    <ClCompile Include="..\mesh_intersect.cc" />
     <ClCompile Include="..\node_geo_transform.cc" />
+    <ClCompile Include="..\svd.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

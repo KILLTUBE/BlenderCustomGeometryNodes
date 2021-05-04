@@ -69,7 +69,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..\pthread;C:\Users\kung\Desktop\blender-my\blender-master\extern\Eigen3;$(ProjectDir)..\zlib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -78,11 +80,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++17 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>C:\Users\kung\Desktop\blender-2.92.0-7d24aa8aa8ca-windows64\2.92\scripts\addons\killtube\SeaSide\zlib\libz_st.lib;C:\Users\kung\Desktop\blender-2.92.0-7d24aa8aa8ca-windows64\2.92\scripts\addons\killtube\SeaSide\pthread\pthreadVC3.lib;Version.lib;Shlwapi.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -116,6 +120,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\array_store.c" />
+    <ClCompile Include="..\array_store_utils.c" />
+    <ClCompile Include="..\array_utils.c" />
+    <ClCompile Include="..\astar.c" />
+    <ClCompile Include="..\bitmap.c" />
+    <ClCompile Include="..\bitmap_draw_2d.c" />
     <ClCompile Include="..\BLI_args.c" />
     <ClCompile Include="..\BLI_array.c" />
     <ClCompile Include="..\BLI_assert.c" />
@@ -127,7 +137,6 @@
     <ClCompile Include="..\BLI_heap.c" />
     <ClCompile Include="..\BLI_heap_simple.c" />
     <ClCompile Include="..\BLI_index_range.cc" />
-    <ClCompile Include="..\BLI_kdopbvh.c" />
     <ClCompile Include="..\BLI_linklist.c" />
     <ClCompile Include="..\BLI_linklist_lockfree.c" />
     <ClCompile Include="..\BLI_memarena.c" />
@@ -136,6 +145,11 @@
     <ClCompile Include="..\BLI_mempool.c" />
     <ClCompile Include="..\BLI_mmap.c" />
     <ClCompile Include="..\BLI_timer.c" />
+    <ClCompile Include="..\boxpack_2d.c" />
+    <ClCompile Include="..\buffer.c" />
+    <ClCompile Include="..\convexhull_2d.c" />
+    <ClCompile Include="..\delaunay_2d.cc" />
+    <ClCompile Include="..\DLRB_tree.c" />
     <ClCompile Include="..\dna_defaults.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -143,14 +157,118 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\dna_utils.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\dot_export.cc" />
+    <ClCompile Include="..\dynlib.c" />
+    <ClCompile Include="..\easing.c" />
+    <ClCompile Include="..\edgehash.c" />
+    <ClCompile Include="..\eigenvalues.cc" />
+    <ClCompile Include="..\endian_switch.c" />
+    <ClCompile Include="..\expr_pylike_eval.c" />
+    <ClCompile Include="..\fileops.c" />
+    <ClCompile Include="..\fnmatch.c" />
+    <ClCompile Include="..\gsqueue.c" />
+    <ClCompile Include="..\hash_md5.c" />
+    <ClCompile Include="..\hash_mm2a.c" />
+    <ClCompile Include="..\hash_mm3.c" />
+    <ClCompile Include="..\jitter_2d.c" />
+    <ClCompile Include="..\kdtree_1d.c" />
+    <ClCompile Include="..\kdtree_2d.c" />
+    <ClCompile Include="..\kdtree_3d.c" />
+    <ClCompile Include="..\kdtree_4d.c" />
+    <ClCompile Include="..\lasso_2d.c" />
+    <ClCompile Include="..\leak_detector.cc" />
+    <ClCompile Include="..\linear_solver.cc" />
+    <ClCompile Include="..\listbase.c" />
     <ClCompile Include="..\makesdna.c" />
+    <ClCompile Include="..\mallocn.c" />
+    <ClCompile Include="..\mallocn_guarded_impl.c" />
+    <ClCompile Include="..\mallocn_lockfree_impl.c" />
+    <ClCompile Include="..\math_base.c" />
+    <ClCompile Include="..\math_base_inline.c" />
+    <ClCompile Include="..\math_base_safe_inline.c" />
+    <ClCompile Include="..\math_bits_inline.c" />
+    <ClCompile Include="..\math_boolean.cc" />
+    <ClCompile Include="..\math_color.c" />
+    <ClCompile Include="..\math_color_blend_inline.c" />
+    <ClCompile Include="..\math_color_inline.c" />
+    <ClCompile Include="..\math_geom.c" />
+    <ClCompile Include="..\math_geom_inline.c" />
+    <ClCompile Include="..\math_interp.c" />
+    <ClCompile Include="..\math_matrix.c" />
+    <ClCompile Include="..\math_rotation.c" />
+    <ClCompile Include="..\math_solvers.c" />
+    <ClCompile Include="..\math_statistics.c" />
+    <ClCompile Include="..\math_vec.cc" />
+    <ClCompile Include="..\math_vector.c" />
+    <ClCompile Include="..\math_vector_inline.c" />
+    <ClCompile Include="..\matrix.cc" />
+    <ClCompile Include="..\memory_utils.c" />
+    <ClCompile Include="..\mesh_boolean.cc" />
+    <ClCompile Include="..\noise.c" />
+    <ClCompile Include="..\numaapi.c" />
+    <ClCompile Include="..\numaapi_win32.c" />
+    <ClCompile Include="..\path_util.c" />
+    <ClCompile Include="..\polyfill_2d.c" />
+    <ClCompile Include="..\polyfill_2d_beautify.c" />
+    <ClCompile Include="..\quadric.c" />
+    <ClCompile Include="..\rand.cc" />
+    <ClCompile Include="..\rct.c" />
+    <ClCompile Include="..\scanfill.c" />
+    <ClCompile Include="..\scanfill_utils.c" />
+    <ClCompile Include="..\session_uuid.c" />
+    <ClCompile Include="..\smallhash.c" />
+    <ClCompile Include="..\sort.c" />
+    <ClCompile Include="..\sort_utils.c" />
+    <ClCompile Include="..\stack.c" />
+    <ClCompile Include="..\storage.c" />
+    <ClCompile Include="..\string.c" />
+    <ClCompile Include="..\string_cursor_utf8.c" />
+    <ClCompile Include="..\string_search.cc" />
+    <ClCompile Include="..\string_utf8.c" />
+    <ClCompile Include="..\string_utils.c" />
+    <ClCompile Include="..\svd.cc" />
+    <ClCompile Include="..\system.c" />
+    <ClCompile Include="..\system_win32.c" />
+    <ClCompile Include="..\task_graph.cc" />
+    <ClCompile Include="..\task_iterator.c" />
+    <ClCompile Include="..\task_pool.cc" />
+    <ClCompile Include="..\task_range.cc" />
+    <ClCompile Include="..\task_scheduler.cc" />
+    <ClCompile Include="..\threads.cc" />
+    <ClCompile Include="..\time.c" />
+    <ClCompile Include="..\timecode.c" />
+    <ClCompile Include="..\timeit.cc" />
+    <ClCompile Include="..\utfconv.c" />
+    <ClCompile Include="..\utf_winfunc.c" />
+    <ClCompile Include="..\uvproject.c" />
+    <ClCompile Include="..\voronoi_2d.c" />
+    <ClCompile Include="..\voxel.c" />
+    <ClCompile Include="..\wcwidth.c" />
+    <ClCompile Include="..\winstuff.c" />
+    <ClCompile Include="..\winstuff_dir.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\BLI_args.h" />
+    <ClInclude Include="..\build_config.h" />
     <ClInclude Include="..\dna_rename_defs.h" />
     <ClInclude Include="..\dna_utils.h" />
+    <ClInclude Include="..\eigenvalues.h" />
+    <ClInclude Include="..\eigen_capi.h" />
+    <ClInclude Include="..\kdtree_impl.h" />
+    <ClInclude Include="..\linear_solver.h" />
+    <ClInclude Include="..\mallocn_inline.h" />
+    <ClInclude Include="..\mallocn_intern.h" />
+    <ClInclude Include="..\matrix.h" />
+    <ClInclude Include="..\numaapi.h" />
+    <ClInclude Include="..\svd.h" />
+    <ClInclude Include="..\utfconv.h" />
+    <ClInclude Include="..\utf_winfunc.h" />
+    <ClInclude Include="..\wcwidth.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\storage_apple.mm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

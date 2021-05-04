@@ -205,7 +205,8 @@ static int additional_slen_offset;
 
 /* stub for BLI_abort() */
 #ifndef NDEBUG
-void BLI_system_backtrace(FILE *fp)
+// kungfooman: remove because it's already in system_win32.c
+void BLI_system_backtrace_NOPE(FILE *fp)
 {
   (void)fp;
 }

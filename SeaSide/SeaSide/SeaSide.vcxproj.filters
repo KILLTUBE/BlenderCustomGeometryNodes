@@ -732,6 +732,21 @@
     <ClInclude Include="..\BLI_endian_switch_inline.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\eigen_capi.h">
+      <Filter>intern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\eigenvalues.h">
+      <Filter>intern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\linear_solver.h">
+      <Filter>intern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix.h">
+      <Filter>intern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\svd.h">
+      <Filter>intern</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\node_geo_transform.cc">
@@ -844,6 +859,84 @@
     </ClCompile>
     <ClCompile Include="..\BLI_filelist.c">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_geom.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_geom_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_interp.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_matrix.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_rotation.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_solvers.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_statistics.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_vec.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_vector.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_vector_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory_utils.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mesh_boolean.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mesh_intersect.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\listbase.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_base.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_base_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_base_safe_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_bits_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_boolean.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_color.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_color_blend_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_color_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\eigenvalues.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear_solver.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\matrix.cc">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\svd.cc">
+      <Filter>intern</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
