@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BLI_float4x4.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_volume_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\node_geometry_util.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_volume.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DEG_depsgraph_query.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_pointcloud_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_float3.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_matrix.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_compiler_attrs.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_sys_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utildefines.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_compiler_compat.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_vector.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utildefines_variadic.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_assert.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_compiler_typecheck.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_base.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_geom.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_interp.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_color.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_rotation.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_solvers.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_statistics.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_simd.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_vec_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_ID.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_customdata_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_defs.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_ID_enums.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_listBase.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_iterator.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DEG_depsgraph.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DEG_depsgraph_build.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_object_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_object_enums.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_lineart_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_action_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_session_uuid_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_userdef_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_view2d_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_texture_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_image_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_color_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MEM_guardedalloc.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_node_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_node.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLT_translation.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_geometry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_geometry_exec.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\node_util.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_socket.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_scene_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_layer_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_freestyle_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_view3d_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_movieclip_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_view3d_enums.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_tracking_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_ghash.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RNA_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_value_map.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_attribute_access.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_geometry_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_geometry_set_instances.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_node_ui_storage.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_persistent_data_handle.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_derived_node_tree.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_function_ref.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_node_tree_ref.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_linear_allocator.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_map.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_multi_value_map.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string_ref.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_timeit.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utility_mixins.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RNA_access.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_span.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_cpp_type.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_span.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_virtual_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_attribute.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_color.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_float2.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_index_mask.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_index_range.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_memory_utils.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_allocator.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_listbase_wrapper.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_listbase.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash_tables.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_map_slots.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_probing_strategies.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_pointer.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_virtual_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_customdata.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_user_counter.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_geometry_set.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_set_slots.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_session_uuid.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DNA_modifier_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector_set_slots.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GPU_material.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GPU_texture.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GPU_state.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\node_geo_transform.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\math_vector_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\math_base_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\math_color_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

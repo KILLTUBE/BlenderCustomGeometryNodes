@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6A4E4FE5-1C23-4DBA-8FAA-C22F82F09ACF}</ProjectGuid>
+    <RootNamespace>SeaSide</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++17 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BKE_attribute.h" />
+    <ClInclude Include="..\BKE_attribute_access.hh" />
+    <ClInclude Include="..\BKE_customdata.h" />
+    <ClInclude Include="..\BKE_geometry_set.h" />
+    <ClInclude Include="..\BKE_geometry_set.hh" />
+    <ClInclude Include="..\BKE_geometry_set_instances.hh" />
+    <ClInclude Include="..\BKE_mesh.h" />
+    <ClInclude Include="..\BKE_mesh_types.h" />
+    <ClInclude Include="..\BKE_node.h" />
+    <ClInclude Include="..\BKE_node_ui_storage.hh" />
+    <ClInclude Include="..\BKE_persistent_data_handle.hh" />
+    <ClInclude Include="..\BKE_volume.h" />
+    <ClInclude Include="..\BLI_allocator.hh" />
+    <ClInclude Include="..\BLI_array.hh" />
+    <ClInclude Include="..\BLI_assert.h" />
+    <ClInclude Include="..\BLI_color.hh" />
+    <ClInclude Include="..\BLI_compiler_attrs.h" />
+    <ClInclude Include="..\BLI_compiler_compat.h" />
+    <ClInclude Include="..\BLI_compiler_typecheck.h" />
+    <ClInclude Include="..\BLI_float2.hh" />
+    <ClInclude Include="..\BLI_float3.hh" />
+    <ClInclude Include="..\BLI_float4x4.hh" />
+    <ClInclude Include="..\BLI_function_ref.hh" />
+    <ClInclude Include="..\BLI_ghash.h" />
+    <ClInclude Include="..\BLI_hash.hh" />
+    <ClInclude Include="..\BLI_hash_tables.hh" />
+    <ClInclude Include="..\BLI_index_mask.hh" />
+    <ClInclude Include="..\BLI_index_range.hh" />
+    <ClInclude Include="..\BLI_iterator.h" />
+    <ClInclude Include="..\BLI_linear_allocator.hh" />
+    <ClInclude Include="..\BLI_listbase.h" />
+    <ClInclude Include="..\BLI_listbase_wrapper.hh" />
+    <ClInclude Include="..\BLI_map.hh" />
+    <ClInclude Include="..\BLI_map_slots.hh" />
+    <ClInclude Include="..\BLI_math.h" />
+    <ClInclude Include="..\BLI_math_base.h" />
+    <ClInclude Include="..\BLI_math_color.h" />
+    <ClInclude Include="..\BLI_math_geom.h" />
+    <ClInclude Include="..\BLI_math_inline.h" />
+    <ClInclude Include="..\BLI_math_interp.h" />
+    <ClInclude Include="..\BLI_math_matrix.h" />
+    <ClInclude Include="..\BLI_math_rotation.h" />
+    <ClInclude Include="..\BLI_math_solvers.h" />
+    <ClInclude Include="..\BLI_math_statistics.h" />
+    <ClInclude Include="..\BLI_math_vector.h" />
+    <ClInclude Include="..\BLI_memory_utils.hh" />
+    <ClInclude Include="..\BLI_multi_value_map.hh" />
+    <ClInclude Include="..\BLI_probing_strategies.hh" />
+    <ClInclude Include="..\BLI_session_uuid.h" />
+    <ClInclude Include="..\BLI_set.hh" />
+    <ClInclude Include="..\BLI_set_slots.hh" />
+    <ClInclude Include="..\BLI_simd.h" />
+    <ClInclude Include="..\BLI_span.hh" />
+    <ClInclude Include="..\BLI_string.h" />
+    <ClInclude Include="..\BLI_string_ref.hh" />
+    <ClInclude Include="..\BLI_sys_types.h" />
+    <ClInclude Include="..\BLI_timeit.hh" />
+    <ClInclude Include="..\BLI_user_counter.hh" />
+    <ClInclude Include="..\BLI_utildefines.h" />
+    <ClInclude Include="..\BLI_utildefines_variadic.h" />
+    <ClInclude Include="..\BLI_utility_mixins.hh" />
+    <ClInclude Include="..\BLI_vector.hh" />
+    <ClInclude Include="..\BLI_vector_set.hh" />
+    <ClInclude Include="..\BLI_vector_set_slots.hh" />
+    <ClInclude Include="..\BLI_virtual_array.hh" />
+    <ClInclude Include="..\BLT_translation.h" />
+    <ClInclude Include="..\DEG_depsgraph.h" />
+    <ClInclude Include="..\DEG_depsgraph_build.h" />
+    <ClInclude Include="..\DEG_depsgraph_query.h" />
+    <ClInclude Include="..\DNA_action_types.h" />
+    <ClInclude Include="..\DNA_color_types.h" />
+    <ClInclude Include="..\DNA_customdata_types.h" />
+    <ClInclude Include="..\DNA_defs.h" />
+    <ClInclude Include="..\DNA_freestyle_types.h" />
+    <ClInclude Include="..\DNA_ID.h" />
+    <ClInclude Include="..\DNA_ID_enums.h" />
+    <ClInclude Include="..\DNA_image_types.h" />
+    <ClInclude Include="..\DNA_layer_types.h" />
+    <ClInclude Include="..\DNA_lineart_types.h" />
+    <ClInclude Include="..\DNA_listBase.h" />
+    <ClInclude Include="..\DNA_modifier_types.h" />
+    <ClInclude Include="..\DNA_movieclip_types.h" />
+    <ClInclude Include="..\DNA_node_types.h" />
+    <ClInclude Include="..\DNA_object_enums.h" />
+    <ClInclude Include="..\DNA_object_types.h" />
+    <ClInclude Include="..\DNA_pointcloud_types.h" />
+    <ClInclude Include="..\DNA_scene_types.h" />
+    <ClInclude Include="..\DNA_session_uuid_types.h" />
+    <ClInclude Include="..\DNA_texture_types.h" />
+    <ClInclude Include="..\DNA_tracking_types.h" />
+    <ClInclude Include="..\DNA_userdef_types.h" />
+    <ClInclude Include="..\DNA_vec_types.h" />
+    <ClInclude Include="..\DNA_view2d_types.h" />
+    <ClInclude Include="..\DNA_view3d_enums.h" />
+    <ClInclude Include="..\DNA_view3d_types.h" />
+    <ClInclude Include="..\DNA_volume_types.h" />
+    <ClInclude Include="..\FN_cpp_type.hh" />
+    <ClInclude Include="..\FN_generic_pointer.hh" />
+    <ClInclude Include="..\FN_generic_span.hh" />
+    <ClInclude Include="..\FN_generic_value_map.hh" />
+    <ClInclude Include="..\FN_generic_virtual_array.hh" />
+    <ClInclude Include="..\GPU_material.h" />
+    <ClInclude Include="..\GPU_state.h" />
+    <ClInclude Include="..\GPU_texture.h" />
+    <ClInclude Include="..\MEM_guardedalloc.h" />
+    <ClInclude Include="..\node_geometry_util.hh" />
+    <ClInclude Include="..\node_util.h" />
+    <ClInclude Include="..\NOD_derived_node_tree.hh" />
+    <ClInclude Include="..\NOD_geometry.h" />
+    <ClInclude Include="..\NOD_geometry_exec.hh" />
+    <ClInclude Include="..\NOD_node_tree_ref.hh" />
+    <ClInclude Include="..\NOD_socket.h" />
+    <ClInclude Include="..\RNA_access.h" />
+    <ClInclude Include="..\RNA_types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\intern\math_base_inline.c" />
+    <ClCompile Include="..\intern\math_color_inline.c" />
+    <ClCompile Include="..\intern\math_vector_inline.c" />
+    <ClCompile Include="..\node_geo_transform.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
