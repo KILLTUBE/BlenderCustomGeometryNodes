@@ -24,7 +24,7 @@
 
 #pragma once
 
-#include "intern/dna_utils.h"
+#include "dna_utils.h"
 
 struct SDNA;
 

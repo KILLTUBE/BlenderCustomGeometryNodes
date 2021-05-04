@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\atomic_interns;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\atomic_interns;$(ProjectDir)..\dna;$(ProjectDir)..\zlib;$(ProjectDir)..\pthread;C:\Users\kung\Desktop\blender-my\blender-master\extern\Eigen3;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -319,6 +319,7 @@
     <ClInclude Include="..\DNA_text_types.h" />
     <ClInclude Include="..\DNA_tracking_types.h" />
     <ClInclude Include="..\DNA_userdef_types.h" />
+    <ClInclude Include="..\dna_utils.h" />
     <ClInclude Include="..\DNA_vec_defaults.h" />
     <ClInclude Include="..\DNA_vec_types.h" />
     <ClInclude Include="..\DNA_vfont_types.h" />
@@ -387,6 +388,7 @@
     <ClCompile Include="..\BLI_timer.c" />
     <ClCompile Include="..\dna_defaults.c" />
     <ClCompile Include="..\dna_genfile.c" />
+    <ClCompile Include="..\dna_utils.c" />
     <ClCompile Include="..\eigenvalues.cc" />
     <ClCompile Include="..\intern\geometry_component_instances.cc" />
     <ClCompile Include="..\intern\geometry_component_mesh.cc" />

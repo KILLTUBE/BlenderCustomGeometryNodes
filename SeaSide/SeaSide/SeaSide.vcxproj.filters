@@ -747,6 +747,9 @@
     <ClInclude Include="..\svd.h">
       <Filter>intern</Filter>
     </ClInclude>
+    <ClInclude Include="..\dna_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\node_geo_transform.cc">
@@ -937,6 +940,9 @@
     </ClCompile>
     <ClCompile Include="..\svd.cc">
       <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dna_utils.c">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
