@@ -45,7 +45,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -118,17 +118,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\attribute_access_intern.hh" />
     <ClInclude Include="..\BKE_attribute.h" />
     <ClInclude Include="..\BKE_attribute_access.hh" />
+    <ClInclude Include="..\BKE_attribute_math.hh" />
     <ClInclude Include="..\BKE_customdata.h" />
+    <ClInclude Include="..\BKE_deform.h" />
     <ClInclude Include="..\BKE_geometry_set.h" />
     <ClInclude Include="..\BKE_geometry_set.hh" />
     <ClInclude Include="..\BKE_geometry_set_instances.hh" />
+    <ClInclude Include="..\BKE_lib_id.h" />
     <ClInclude Include="..\BKE_mesh.h" />
     <ClInclude Include="..\BKE_mesh_types.h" />
+    <ClInclude Include="..\BKE_mesh_wrapper.h" />
+    <ClInclude Include="..\BKE_modifier.h" />
     <ClInclude Include="..\BKE_node.h" />
     <ClInclude Include="..\BKE_node_ui_storage.hh" />
     <ClInclude Include="..\BKE_persistent_data_handle.hh" />
+    <ClInclude Include="..\BKE_pointcloud.h" />
     <ClInclude Include="..\BKE_volume.h" />
     <ClInclude Include="..\BLI_allocator.hh" />
     <ClInclude Include="..\BLI_array.hh" />
@@ -166,6 +173,7 @@
     <ClInclude Include="..\BLI_memory_utils.hh" />
     <ClInclude Include="..\BLI_multi_value_map.hh" />
     <ClInclude Include="..\BLI_probing_strategies.hh" />
+    <ClInclude Include="..\BLI_rand.hh" />
     <ClInclude Include="..\BLI_session_uuid.h" />
     <ClInclude Include="..\BLI_set.hh" />
     <ClInclude Include="..\BLI_set_slots.hh" />
@@ -184,10 +192,12 @@
     <ClInclude Include="..\BLI_vector_set_slots.hh" />
     <ClInclude Include="..\BLI_virtual_array.hh" />
     <ClInclude Include="..\BLT_translation.h" />
+    <ClInclude Include="..\ccall.h" />
     <ClInclude Include="..\DEG_depsgraph.h" />
     <ClInclude Include="..\DEG_depsgraph_build.h" />
     <ClInclude Include="..\DEG_depsgraph_query.h" />
     <ClInclude Include="..\DNA_action_types.h" />
+    <ClInclude Include="..\DNA_collection_types.h" />
     <ClInclude Include="..\DNA_color_types.h" />
     <ClInclude Include="..\DNA_customdata_types.h" />
     <ClInclude Include="..\DNA_defs.h" />
@@ -198,6 +208,8 @@
     <ClInclude Include="..\DNA_layer_types.h" />
     <ClInclude Include="..\DNA_lineart_types.h" />
     <ClInclude Include="..\DNA_listBase.h" />
+    <ClInclude Include="..\DNA_meshdata_types.h" />
+    <ClInclude Include="..\DNA_mesh_types.h" />
     <ClInclude Include="..\DNA_modifier_types.h" />
     <ClInclude Include="..\DNA_movieclip_types.h" />
     <ClInclude Include="..\DNA_node_types.h" />
@@ -234,6 +246,12 @@
     <ClInclude Include="..\RNA_types.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\intern\geometry_component_instances.cc" />
+    <ClCompile Include="..\intern\geometry_component_mesh.cc" />
+    <ClCompile Include="..\intern\geometry_component_pointcloud.cc" />
+    <ClCompile Include="..\intern\geometry_component_volume.cc" />
+    <ClCompile Include="..\intern\geometry_set.cc" />
+    <ClCompile Include="..\intern\geometry_set_instances.cc" />
     <ClCompile Include="..\intern\math_base_inline.c" />
     <ClCompile Include="..\intern\math_color_inline.c" />
     <ClCompile Include="..\intern\math_vector_inline.c" />

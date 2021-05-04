@@ -30,6 +30,8 @@
 
 #include "node_geometry_util.hh"
 
+#include "ccall.h"
+
 static bNodeSocketTemplate geo_node_transform_in[] = {
     {SOCK_GEOMETRY, N_("Geometry")},
     {SOCK_VECTOR, N_("Translation"), 0.0f, 0.0f, 0.0f, 1.0f, -FLT_MAX, FLT_MAX, PROP_TRANSLATION},
@@ -152,7 +154,7 @@ static void transform_volume(Volume *volume,
 #endif
 }
 
-static void geo_node_transform_exec(GeoNodeExecParams params)
+CCALL void geo_node_transform_exec(GeoNodeExecParams params)
 {
   GeometrySet geometry_set = params.extract_input<GeometrySet>("Geometry");
   const float3 translation = params.extract_input<float3>("Translation");
