@@ -18,203 +18,362 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{6A4E4FE5-1C23-4DBA-8FAA-C22F82F09ACF}</ProjectGuid>
-    <RootNamespace>SeaSide</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\atomic_interns;$(ProjectDir)..\dna;$(ProjectDir)..\zlib;$(ProjectDir)..\pthread;C:\Users\kung\Desktop\blender-my\blender-master\extern\Eigen3;$(IncludePath)</IncludePath>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/std:c++17 %(AdditionalOptions)</AdditionalOptions>
-      <PreprocessorDefinitions>__LITTLE_ENDIAN__;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\atomic_ops.h" />
     <ClInclude Include="..\attribute_access_intern.hh" />
+    <ClInclude Include="..\basedir.h" />
+    <ClInclude Include="..\BKE_action.h" />
+    <ClInclude Include="..\BKE_addon.h" />
+    <ClInclude Include="..\BKE_animsys.h" />
     <ClInclude Include="..\BKE_anim_data.h" />
+    <ClInclude Include="..\BKE_anim_path.h" />
+    <ClInclude Include="..\BKE_anim_visualization.h" />
+    <ClInclude Include="..\BKE_appdir.h" />
+    <ClInclude Include="..\BKE_armature.h" />
+    <ClInclude Include="..\BKE_asset.h" />
     <ClInclude Include="..\BKE_attribute.h" />
     <ClInclude Include="..\BKE_attribute_access.hh" />
     <ClInclude Include="..\BKE_attribute_math.hh" />
+    <ClInclude Include="..\BKE_autoexec.h" />
+    <ClInclude Include="..\BKE_blender.h" />
+    <ClInclude Include="..\BKE_blender_copybuffer.h" />
+    <ClInclude Include="..\BKE_blender_undo.h" />
+    <ClInclude Include="..\BKE_blender_user_menu.h" />
+    <ClInclude Include="..\BKE_blender_version.h" />
+    <ClInclude Include="..\BKE_blendfile.h" />
+    <ClInclude Include="..\BKE_boids.h" />
+    <ClInclude Include="..\BKE_bpath.h" />
+    <ClInclude Include="..\BKE_brush.h" />
+    <ClInclude Include="..\BKE_bvhutils.h" />
+    <ClInclude Include="..\BKE_cachefile.h" />
+    <ClInclude Include="..\BKE_callbacks.h" />
+    <ClInclude Include="..\BKE_camera.h" />
+    <ClInclude Include="..\BKE_ccg.h" />
+    <ClInclude Include="..\BKE_cdderivedmesh.h" />
+    <ClInclude Include="..\BKE_cloth.h" />
+    <ClInclude Include="..\BKE_collection.h" />
+    <ClInclude Include="..\BKE_collision.h" />
+    <ClInclude Include="..\BKE_colorband.h" />
+    <ClInclude Include="..\BKE_colortools.h" />
+    <ClInclude Include="..\BKE_constraint.h" />
+    <ClInclude Include="..\BKE_context.h" />
+    <ClInclude Include="..\BKE_crazyspace.h" />
+    <ClInclude Include="..\BKE_cryptomatte.h" />
+    <ClInclude Include="..\BKE_cryptomatte.hh" />
+    <ClInclude Include="..\BKE_curve.h" />
+    <ClInclude Include="..\BKE_curveprofile.h" />
     <ClInclude Include="..\BKE_customdata.h" />
+    <ClInclude Include="..\BKE_customdata_file.h" />
+    <ClInclude Include="..\BKE_data_transfer.h" />
     <ClInclude Include="..\BKE_deform.h" />
+    <ClInclude Include="..\BKE_DerivedMesh.h" />
+    <ClInclude Include="..\BKE_displist.h" />
+    <ClInclude Include="..\BKE_displist_tangent.h" />
+    <ClInclude Include="..\BKE_duplilist.h" />
+    <ClInclude Include="..\BKE_dynamicpaint.h" />
+    <ClInclude Include="..\BKE_editlattice.h" />
+    <ClInclude Include="..\BKE_editmesh.h" />
+    <ClInclude Include="..\BKE_editmesh_bvh.h" />
+    <ClInclude Include="..\BKE_editmesh_cache.h" />
+    <ClInclude Include="..\BKE_editmesh_tangent.h" />
+    <ClInclude Include="..\BKE_effect.h" />
+    <ClInclude Include="..\BKE_fcurve.h" />
+    <ClInclude Include="..\BKE_fcurve_driver.h" />
+    <ClInclude Include="..\BKE_fluid.h" />
+    <ClInclude Include="..\BKE_font.h" />
+    <ClInclude Include="..\BKE_freestyle.h" />
     <ClInclude Include="..\BKE_geometry_set.h" />
     <ClInclude Include="..\BKE_geometry_set.hh" />
     <ClInclude Include="..\BKE_geometry_set_instances.hh" />
     <ClInclude Include="..\BKE_global.h" />
+    <ClInclude Include="..\BKE_gpencil.h" />
+    <ClInclude Include="..\BKE_gpencil_curve.h" />
+    <ClInclude Include="..\BKE_gpencil_geom.h" />
+    <ClInclude Include="..\BKE_gpencil_modifier.h" />
+    <ClInclude Include="..\BKE_hair.h" />
+    <ClInclude Include="..\BKE_icons.h" />
+    <ClInclude Include="..\BKE_idprop.h" />
     <ClInclude Include="..\BKE_idtype.h" />
+    <ClInclude Include="..\BKE_image.h" />
+    <ClInclude Include="..\BKE_image_save.h" />
+    <ClInclude Include="..\BKE_ipo.h" />
+    <ClInclude Include="..\BKE_kelvinlet.h" />
+    <ClInclude Include="..\BKE_key.h" />
+    <ClInclude Include="..\BKE_keyconfig.h" />
+    <ClInclude Include="..\BKE_lattice.h" />
+    <ClInclude Include="..\BKE_layer.h" />
+    <ClInclude Include="..\BKE_library.h" />
     <ClInclude Include="..\BKE_lib_id.h" />
+    <ClInclude Include="..\BKE_lib_override.h" />
     <ClInclude Include="..\BKE_lib_query.h" />
     <ClInclude Include="..\BKE_lib_remap.h" />
+    <ClInclude Include="..\BKE_light.h" />
+    <ClInclude Include="..\BKE_lightprobe.h" />
+    <ClInclude Include="..\BKE_linestyle.h" />
     <ClInclude Include="..\BKE_main.h" />
+    <ClInclude Include="..\BKE_main_idmap.h" />
+    <ClInclude Include="..\BKE_mask.h" />
+    <ClInclude Include="..\BKE_material.h" />
+    <ClInclude Include="..\BKE_mball.h" />
+    <ClInclude Include="..\BKE_mball_tessellate.h" />
     <ClInclude Include="..\BKE_mesh.h" />
+    <ClInclude Include="..\BKE_mesh_boolean_convert.hh" />
+    <ClInclude Include="..\BKE_mesh_fair.h" />
+    <ClInclude Include="..\BKE_mesh_iterators.h" />
+    <ClInclude Include="..\BKE_mesh_mapping.h" />
+    <ClInclude Include="..\BKE_mesh_mirror.h" />
+    <ClInclude Include="..\BKE_mesh_remap.h" />
+    <ClInclude Include="..\BKE_mesh_remesh_voxel.h" />
+    <ClInclude Include="..\BKE_mesh_runtime.h" />
+    <ClInclude Include="..\BKE_mesh_sample.hh" />
+    <ClInclude Include="..\BKE_mesh_tangent.h" />
     <ClInclude Include="..\BKE_mesh_types.h" />
     <ClInclude Include="..\BKE_mesh_wrapper.h" />
     <ClInclude Include="..\BKE_modifier.h" />
+    <ClInclude Include="..\BKE_movieclip.h" />
+    <ClInclude Include="..\BKE_multires.h" />
+    <ClInclude Include="..\BKE_nla.h" />
     <ClInclude Include="..\BKE_node.h" />
     <ClInclude Include="..\BKE_node_ui_storage.hh" />
     <ClInclude Include="..\BKE_object.h" />
+    <ClInclude Include="..\BKE_object_deform.h" />
+    <ClInclude Include="..\BKE_object_facemap.h" />
+    <ClInclude Include="..\BKE_ocean.h" />
+    <ClInclude Include="..\BKE_outliner_treehash.h" />
     <ClInclude Include="..\BKE_packedFile.h" />
+    <ClInclude Include="..\BKE_paint.h" />
+    <ClInclude Include="..\BKE_particle.h" />
+    <ClInclude Include="..\BKE_pbvh.h" />
     <ClInclude Include="..\BKE_persistent_data_handle.hh" />
+    <ClInclude Include="..\BKE_pointcache.h" />
     <ClInclude Include="..\BKE_pointcloud.h" />
+    <ClInclude Include="..\BKE_preferences.h" />
     <ClInclude Include="..\BKE_report.h" />
+    <ClInclude Include="..\BKE_rigidbody.h" />
     <ClInclude Include="..\BKE_scene.h" />
+    <ClInclude Include="..\BKE_screen.h" />
+    <ClInclude Include="..\BKE_sequencer_offscreen.h" />
+    <ClInclude Include="..\BKE_shader_fx.h" />
+    <ClInclude Include="..\BKE_shrinkwrap.h" />
+    <ClInclude Include="..\BKE_simulation.h" />
+    <ClInclude Include="..\BKE_softbody.h" />
+    <ClInclude Include="..\BKE_sound.h" />
+    <ClInclude Include="..\BKE_speaker.h" />
+    <ClInclude Include="..\BKE_studiolight.h" />
+    <ClInclude Include="..\BKE_subdiv.h" />
+    <ClInclude Include="..\BKE_subdiv_ccg.h" />
+    <ClInclude Include="..\BKE_subdiv_deform.h" />
+    <ClInclude Include="..\BKE_subdiv_eval.h" />
+    <ClInclude Include="..\BKE_subdiv_foreach.h" />
+    <ClInclude Include="..\BKE_subdiv_mesh.h" />
+    <ClInclude Include="..\BKE_subdiv_topology.h" />
+    <ClInclude Include="..\BKE_subsurf.h" />
+    <ClInclude Include="..\BKE_text.h" />
+    <ClInclude Include="..\BKE_texture.h" />
+    <ClInclude Include="..\BKE_text_suggestions.h" />
+    <ClInclude Include="..\BKE_tracking.h" />
+    <ClInclude Include="..\BKE_undo_system.h" />
+    <ClInclude Include="..\BKE_unit.h" />
     <ClInclude Include="..\BKE_volume.h" />
+    <ClInclude Include="..\BKE_volume_render.h" />
+    <ClInclude Include="..\BKE_volume_to_mesh.hh" />
+    <ClInclude Include="..\BKE_workspace.h" />
+    <ClInclude Include="..\BKE_world.h" />
+    <ClInclude Include="..\BKE_writeavi.h" />
+    <ClInclude Include="..\BKE_writeffmpeg.h" />
+    <ClInclude Include="..\blenloader\intern\readfile.h" />
     <ClInclude Include="..\BLI_alloca.h" />
     <ClInclude Include="..\BLI_allocator.hh" />
+    <ClInclude Include="..\BLI_args.h" />
+    <ClInclude Include="..\BLI_array.h" />
     <ClInclude Include="..\BLI_array.hh" />
+    <ClInclude Include="..\BLI_array_store.h" />
+    <ClInclude Include="..\BLI_array_store_utils.h" />
+    <ClInclude Include="..\BLI_array_utils.h" />
+    <ClInclude Include="..\BLI_asan.h" />
     <ClInclude Include="..\BLI_assert.h" />
+    <ClInclude Include="..\BLI_astar.h" />
+    <ClInclude Include="..\BLI_bitmap.h" />
+    <ClInclude Include="..\BLI_bitmap_draw_2d.h" />
+    <ClInclude Include="..\BLI_blenlib.h" />
+    <ClInclude Include="..\BLI_boxpack_2d.h" />
+    <ClInclude Include="..\BLI_buffer.h" />
     <ClInclude Include="..\BLI_color.hh" />
     <ClInclude Include="..\BLI_compiler_attrs.h" />
     <ClInclude Include="..\BLI_compiler_compat.h" />
     <ClInclude Include="..\BLI_compiler_typecheck.h" />
+    <ClInclude Include="..\BLI_console.h" />
+    <ClInclude Include="..\BLI_convexhull_2d.h" />
+    <ClInclude Include="..\BLI_delaunay_2d.h" />
+    <ClInclude Include="..\BLI_dial_2d.h" />
+    <ClInclude Include="..\BLI_disjoint_set.hh" />
+    <ClInclude Include="..\BLI_dlrbTree.h" />
+    <ClInclude Include="..\BLI_dot_export.hh" />
+    <ClInclude Include="..\BLI_dot_export_attribute_enums.hh" />
+    <ClInclude Include="..\BLI_double2.hh" />
+    <ClInclude Include="..\BLI_double3.hh" />
+    <ClInclude Include="..\BLI_dynlib.h" />
+    <ClInclude Include="..\BLI_dynstr.h" />
+    <ClInclude Include="..\BLI_easing.h" />
+    <ClInclude Include="..\BLI_edgehash.h" />
     <ClInclude Include="..\BLI_endian_switch.h" />
     <ClInclude Include="..\BLI_endian_switch_inline.h" />
+    <ClInclude Include="..\BLI_expr_pylike_eval.h" />
     <ClInclude Include="..\BLI_fileops.h" />
+    <ClInclude Include="..\BLI_fileops_types.h" />
     <ClInclude Include="..\BLI_float2.hh" />
     <ClInclude Include="..\BLI_float3.hh" />
     <ClInclude Include="..\BLI_float4x4.hh" />
+    <ClInclude Include="..\BLI_fnmatch.h" />
     <ClInclude Include="..\BLI_function_ref.hh" />
     <ClInclude Include="..\BLI_ghash.h" />
+    <ClInclude Include="..\BLI_gsqueue.h" />
+    <ClInclude Include="..\BLI_hash.h" />
     <ClInclude Include="..\BLI_hash.hh" />
+    <ClInclude Include="..\BLI_hash_md5.h" />
+    <ClInclude Include="..\BLI_hash_mm2a.h" />
+    <ClInclude Include="..\BLI_hash_mm3.h" />
     <ClInclude Include="..\BLI_hash_tables.hh" />
+    <ClInclude Include="..\BLI_heap.h" />
+    <ClInclude Include="..\BLI_heap_simple.h" />
     <ClInclude Include="..\BLI_index_mask.hh" />
     <ClInclude Include="..\BLI_index_range.hh" />
+    <ClInclude Include="..\BLI_inplace_priority_queue.hh" />
     <ClInclude Include="..\BLI_iterator.h" />
+    <ClInclude Include="..\BLI_jitter_2d.h" />
+    <ClInclude Include="..\BLI_kdopbvh.h" />
+    <ClInclude Include="..\BLI_kdtree.h" />
+    <ClInclude Include="..\BLI_kdtree_impl.h" />
+    <ClInclude Include="..\BLI_lasso_2d.h" />
     <ClInclude Include="..\BLI_linear_allocator.hh" />
+    <ClInclude Include="..\BLI_linklist.h" />
+    <ClInclude Include="..\BLI_linklist_lockfree.h" />
+    <ClInclude Include="..\BLI_linklist_stack.h" />
+    <ClInclude Include="..\BLI_link_utils.h" />
     <ClInclude Include="..\BLI_listbase.h" />
     <ClInclude Include="..\BLI_listbase_wrapper.hh" />
     <ClInclude Include="..\BLI_map.hh" />
     <ClInclude Include="..\BLI_map_slots.hh" />
     <ClInclude Include="..\BLI_math.h" />
     <ClInclude Include="..\BLI_math_base.h" />
+    <ClInclude Include="..\BLI_math_base_safe.h" />
+    <ClInclude Include="..\BLI_math_bits.h" />
+    <ClInclude Include="..\BLI_math_boolean.hh" />
     <ClInclude Include="..\BLI_math_color.h" />
+    <ClInclude Include="..\BLI_math_color_blend.h" />
     <ClInclude Include="..\BLI_math_geom.h" />
     <ClInclude Include="..\BLI_math_inline.h" />
     <ClInclude Include="..\BLI_math_interp.h" />
     <ClInclude Include="..\BLI_math_matrix.h" />
+    <ClInclude Include="..\BLI_math_mpq.hh" />
     <ClInclude Include="..\BLI_math_rotation.h" />
     <ClInclude Include="..\BLI_math_solvers.h" />
     <ClInclude Include="..\BLI_math_statistics.h" />
     <ClInclude Include="..\BLI_math_vector.h" />
     <ClInclude Include="..\BLI_memarena.h" />
+    <ClInclude Include="..\BLI_memblock.h" />
+    <ClInclude Include="..\BLI_memiter.h" />
+    <ClInclude Include="..\BLI_memory_utils.h" />
     <ClInclude Include="..\BLI_memory_utils.hh" />
+    <ClInclude Include="..\BLI_mempool.h" />
+    <ClInclude Include="..\BLI_mesh_boolean.hh" />
+    <ClInclude Include="..\BLI_mesh_intersect.hh" />
+    <ClInclude Include="..\BLI_mmap.h" />
+    <ClInclude Include="..\BLI_mpq2.hh" />
+    <ClInclude Include="..\BLI_mpq3.hh" />
     <ClInclude Include="..\BLI_multi_value_map.hh" />
+    <ClInclude Include="..\BLI_noise.h" />
     <ClInclude Include="..\BLI_path_util.h" />
+    <ClInclude Include="..\BLI_polyfill_2d.h" />
+    <ClInclude Include="..\BLI_polyfill_2d_beautify.h" />
     <ClInclude Include="..\BLI_probing_strategies.hh" />
+    <ClInclude Include="..\BLI_quadric.h" />
+    <ClInclude Include="..\BLI_rand.h" />
     <ClInclude Include="..\BLI_rand.hh" />
+    <ClInclude Include="..\BLI_rect.h" />
+    <ClInclude Include="..\BLI_resource_scope.hh" />
+    <ClInclude Include="..\BLI_scanfill.h" />
     <ClInclude Include="..\BLI_session_uuid.h" />
     <ClInclude Include="..\BLI_set.hh" />
     <ClInclude Include="..\BLI_set_slots.hh" />
     <ClInclude Include="..\BLI_simd.h" />
+    <ClInclude Include="..\BLI_smallhash.h" />
+    <ClInclude Include="..\BLI_sort.h" />
+    <ClInclude Include="..\BLI_sort_utils.h" />
     <ClInclude Include="..\BLI_span.hh" />
+    <ClInclude Include="..\BLI_stack.h" />
+    <ClInclude Include="..\BLI_stack.hh" />
     <ClInclude Include="..\BLI_strict_flags.h" />
     <ClInclude Include="..\BLI_string.h" />
+    <ClInclude Include="..\BLI_string_cursor_utf8.h" />
     <ClInclude Include="..\BLI_string_ref.hh" />
+    <ClInclude Include="..\BLI_string_search.h" />
+    <ClInclude Include="..\BLI_string_utf8.h" />
+    <ClInclude Include="..\BLI_string_utils.h" />
     <ClInclude Include="..\BLI_system.h" />
     <ClInclude Include="..\BLI_sys_types.h" />
+    <ClInclude Include="..\BLI_task.h" />
+    <ClInclude Include="..\BLI_task.hh" />
+    <ClInclude Include="..\BLI_threads.h" />
+    <ClInclude Include="..\BLI_timecode.h" />
     <ClInclude Include="..\BLI_timeit.hh" />
+    <ClInclude Include="..\BLI_timer.h" />
     <ClInclude Include="..\BLI_user_counter.hh" />
     <ClInclude Include="..\BLI_utildefines.h" />
+    <ClInclude Include="..\BLI_utildefines_iter.h" />
+    <ClInclude Include="..\BLI_utildefines_stack.h" />
     <ClInclude Include="..\BLI_utildefines_variadic.h" />
     <ClInclude Include="..\BLI_utility_mixins.hh" />
+    <ClInclude Include="..\BLI_uvproject.h" />
     <ClInclude Include="..\BLI_vector.hh" />
+    <ClInclude Include="..\BLI_vector_adaptor.hh" />
     <ClInclude Include="..\BLI_vector_set.hh" />
     <ClInclude Include="..\BLI_vector_set_slots.hh" />
+    <ClInclude Include="..\BLI_vfontdata.h" />
     <ClInclude Include="..\BLI_virtual_array.hh" />
+    <ClInclude Include="..\BLI_virtual_vector_array.hh" />
+    <ClInclude Include="..\BLI_voronoi_2d.h" />
+    <ClInclude Include="..\BLI_voxel.h" />
+    <ClInclude Include="..\BLI_winstuff.h" />
     <ClInclude Include="..\BLO_read_write.h" />
     <ClInclude Include="..\BLT_translation.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_callback_generic.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_construct.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_core.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_delete.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_edgeloop.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_error.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_inline.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_interp.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_iterators.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_iterators_inline.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_log.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_marking.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh_convert.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh_duplicate.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh_validate.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_mods.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_operators.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_operators_private.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_operator_api.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_operator_api_inline.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_polygon.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_polygon_edgenet.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_private.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_query.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_query_inline.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_query_uv.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_structure.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_structure_inline.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_walkers.h" />
+    <ClInclude Include="..\bmesh\intern\bmesh_walkers_private.h" />
+    <ClInclude Include="..\build_config.h" />
     <ClInclude Include="..\ccall.h" />
     <ClInclude Include="..\CLG_log.h" />
+    <ClInclude Include="..\curve_fit_nd\intern\curve_fit_inline.h" />
+    <ClInclude Include="..\curve_fit_nd\intern\generic_alloc_impl.h" />
+    <ClInclude Include="..\curve_fit_nd\intern\generic_heap.h" />
     <ClInclude Include="..\DEG_depsgraph.h" />
     <ClInclude Include="..\DEG_depsgraph_build.h" />
     <ClInclude Include="..\DEG_depsgraph_query.h" />
@@ -300,6 +459,7 @@
     <ClInclude Include="..\DNA_pointcache_types.h" />
     <ClInclude Include="..\DNA_pointcloud_defaults.h" />
     <ClInclude Include="..\DNA_pointcloud_types.h" />
+    <ClInclude Include="..\dna_rename_defs.h" />
     <ClInclude Include="..\DNA_rigidbody_types.h" />
     <ClInclude Include="..\DNA_scene_defaults.h" />
     <ClInclude Include="..\DNA_scene_types.h" />
@@ -314,6 +474,7 @@
     <ClInclude Include="..\DNA_space_types.h" />
     <ClInclude Include="..\DNA_speaker_defaults.h" />
     <ClInclude Include="..\DNA_speaker_types.h" />
+    <ClInclude Include="..\dna_struct_offsets.h" />
     <ClInclude Include="..\DNA_texture_defaults.h" />
     <ClInclude Include="..\DNA_texture_types.h" />
     <ClInclude Include="..\DNA_text_types.h" />
@@ -344,16 +505,38 @@
     <ClInclude Include="..\GPU_material.h" />
     <ClInclude Include="..\GPU_state.h" />
     <ClInclude Include="..\GPU_texture.h" />
+    <ClInclude Include="..\ikplugin\intern\ikplugin_api.h" />
+    <ClInclude Include="..\ikplugin\intern\iksolver_plugin.h" />
+    <ClInclude Include="..\ikplugin\intern\itasc_plugin.h" />
     <ClInclude Include="..\IMB_imbuf.h" />
     <ClInclude Include="..\intern\atomic_ops_ext.h" />
     <ClInclude Include="..\intern\atomic_ops_msvc.h" />
     <ClInclude Include="..\intern\atomic_ops_unix.h" />
     <ClInclude Include="..\intern\atomic_ops_utils.h" />
+    <ClInclude Include="..\intern\attribute_access_intern.hh" />
+    <ClInclude Include="..\intern\CCGSubSurf.h" />
+    <ClInclude Include="..\intern\CCGSubSurf_inline.h" />
+    <ClInclude Include="..\intern\CCGSubSurf_intern.h" />
+    <ClInclude Include="..\intern\data_transfer_intern.h" />
+    <ClInclude Include="..\intern\lib_intern.h" />
     <ClInclude Include="..\intern\mallocn_inline.h" />
     <ClInclude Include="..\intern\mallocn_intern.h" />
+    <ClInclude Include="..\intern\multires_inline.h" />
+    <ClInclude Include="..\intern\multires_reshape.h" />
+    <ClInclude Include="..\intern\multires_unsubdivide.h" />
+    <ClInclude Include="..\intern\ocean_intern.h" />
+    <ClInclude Include="..\intern\pbvh_intern.h" />
+    <ClInclude Include="..\intern\subdiv_converter.h" />
+    <ClInclude Include="..\intern\subdiv_inline.h" />
+    <ClInclude Include="..\kdtree_impl.h" />
+    <ClInclude Include="..\lib_intern.h" />
     <ClInclude Include="..\linear_solver.h" />
+    <ClInclude Include="..\list_sort_impl.h" />
+    <ClInclude Include="..\mallocn_inline.h" />
+    <ClInclude Include="..\mallocn_intern.h" />
     <ClInclude Include="..\matrix.h" />
     <ClInclude Include="..\MEM_guardedalloc.h" />
+    <ClInclude Include="..\nla_private.h" />
     <ClInclude Include="..\node_geometry_util.hh" />
     <ClInclude Include="..\node_util.h" />
     <ClInclude Include="..\NOD_derived_node_tree.hh" />
@@ -361,11 +544,41 @@
     <ClInclude Include="..\NOD_geometry_exec.hh" />
     <ClInclude Include="..\NOD_node_tree_ref.hh" />
     <ClInclude Include="..\NOD_socket.h" />
+    <ClInclude Include="..\numaapi.h" />
+    <ClInclude Include="..\particle_private.h" />
+    <ClInclude Include="..\PIL_time.h" />
     <ClInclude Include="..\RNA_access.h" />
     <ClInclude Include="..\RNA_types.h" />
     <ClInclude Include="..\svd.h" />
+    <ClInclude Include="..\tracking_private.h" />
+    <ClInclude Include="..\utfconv.h" />
+    <ClInclude Include="..\utf_winfunc.h" />
+    <ClInclude Include="..\wcwidth.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\array_store.c" />
+    <ClCompile Include="..\array_store_utils.c" />
+    <ClCompile Include="..\array_utils.c" />
+    <ClCompile Include="..\astar.c" />
+    <ClCompile Include="..\bitmap.c" />
+    <ClCompile Include="..\bitmap_draw_2d.c" />
+    <ClCompile Include="..\blenloader\intern\blend_validate.c" />
+    <ClCompile Include="..\blenloader\intern\readblenentry.c" />
+    <ClCompile Include="..\blenloader\intern\readfile.c" />
+    <ClCompile Include="..\blenloader\intern\readfile_tempload.c" />
+    <ClCompile Include="..\blenloader\intern\undofile.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_250.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_260.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_270.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_280.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_290.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_300.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_cycles.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_defaults.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_dna.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_legacy.c" />
+    <ClCompile Include="..\blenloader\intern\versioning_userdef.c" />
+    <ClCompile Include="..\blenloader\intern\writefile.c" />
     <ClCompile Include="..\BLI_args.c" />
     <ClCompile Include="..\BLI_array.c" />
     <ClCompile Include="..\BLI_assert.c" />
@@ -386,10 +599,320 @@
     <ClCompile Include="..\BLI_mempool.c" />
     <ClCompile Include="..\BLI_mmap.c" />
     <ClCompile Include="..\BLI_timer.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_callback_generic.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_construct.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_core.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_delete.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_edgeloop.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_interp.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_iterators.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_log.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_marking.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh_convert.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh_duplicate.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh_validate.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_mods.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_opdefines.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_operators.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_polygon.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_polygon_edgenet.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_query.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_query_uv.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_structure.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_walkers.c" />
+    <ClCompile Include="..\bmesh\intern\bmesh_walkers_impl.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_beautify.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_bevel.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_bisect_plane.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_bridge.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_connect.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_connect_concave.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_connect_nonplanar.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_connect_pair.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_create.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_dissolve.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_dupe.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_edgenet.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_extrude.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_fill_attribute.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_fill_edgeloop.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_fill_grid.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_fill_holes.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_hull.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_inset.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_join_triangles.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_mesh_convert.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_mirror.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_normals.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_offset_edgeloops.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_planar_faces.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_poke.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_primitive.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_removedoubles.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_rotate_edges.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_smooth_laplacian.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_split_edges.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_subdivide.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_subdivide_edgering.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_symmetrize.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_triangulate.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_unsubdivide.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_utils.c" />
+    <ClCompile Include="..\bmesh\operators\bmo_wireframe.c" />
+    <ClCompile Include="..\boxpack_2d.c" />
+    <ClCompile Include="..\buffer.c" />
+    <ClCompile Include="..\convexhull_2d.c" />
+    <ClCompile Include="..\curve_fit_nd\intern\curve_fit_corners_detect.c" />
+    <ClCompile Include="..\curve_fit_nd\intern\curve_fit_cubic.c" />
+    <ClCompile Include="..\curve_fit_nd\intern\curve_fit_cubic_refit.c" />
+    <ClCompile Include="..\curve_fit_nd\intern\generic_heap.c" />
+    <ClCompile Include="..\delaunay_2d.cc" />
+    <ClCompile Include="..\DLRB_tree.c" />
+    <ClCompile Include="..\ikplugin\intern\ikplugin_api.c" />
+    <ClCompile Include="..\ikplugin\intern\iksolver_plugin.c" />
+    <ClCompile Include="..\ikplugin\intern\itasc_plugin.cpp" />
+    <ClCompile Include="..\intern\action.c" />
+    <ClCompile Include="..\intern\action_mirror.c" />
+    <ClCompile Include="..\intern\addon.c" />
+    <ClCompile Include="..\intern\anim_data.c" />
+    <ClCompile Include="..\intern\anim_path.c" />
+    <ClCompile Include="..\intern\anim_sys.c" />
+    <ClCompile Include="..\intern\anim_visualization.c" />
+    <ClCompile Include="..\intern\appdir.c" />
+    <ClCompile Include="..\intern\armature.c" />
+    <ClCompile Include="..\intern\armature_deform.c" />
+    <ClCompile Include="..\intern\armature_pose.cc" />
+    <ClCompile Include="..\intern\armature_test.cc" />
+    <ClCompile Include="..\intern\armature_update.c" />
+    <ClCompile Include="..\intern\asset.cc" />
+    <ClCompile Include="..\intern\attribute.c" />
+    <ClCompile Include="..\intern\attribute_access.cc" />
+    <ClCompile Include="..\intern\attribute_math.cc" />
+    <ClCompile Include="..\intern\autoexec.c" />
+    <ClCompile Include="..\intern\blender.c" />
+    <ClCompile Include="..\intern\blender_copybuffer.c" />
+    <ClCompile Include="..\intern\blender_undo.c" />
+    <ClCompile Include="..\intern\blender_user_menu.c" />
+    <ClCompile Include="..\intern\blendfile.c" />
+    <ClCompile Include="..\intern\boids.c" />
+    <ClCompile Include="..\intern\bpath.c" />
+    <ClCompile Include="..\intern\brush.c" />
+    <ClCompile Include="..\intern\bvhutils.c" />
+    <ClCompile Include="..\intern\cachefile.c" />
+    <ClCompile Include="..\intern\callbacks.c" />
+    <ClCompile Include="..\intern\camera.c" />
+    <ClCompile Include="..\intern\CCGSubSurf.c" />
+    <ClCompile Include="..\intern\CCGSubSurf_legacy.c" />
+    <ClCompile Include="..\intern\CCGSubSurf_util.c" />
+    <ClCompile Include="..\intern\cdderivedmesh.c" />
+    <ClCompile Include="..\intern\cloth.c" />
+    <ClCompile Include="..\intern\collection.c" />
+    <ClCompile Include="..\intern\collision.c" />
+    <ClCompile Include="..\intern\colorband.c" />
+    <ClCompile Include="..\intern\colortools.c" />
+    <ClCompile Include="..\intern\constraint.c" />
+    <ClCompile Include="..\intern\context.c" />
+    <ClCompile Include="..\intern\crazyspace.c" />
+    <ClCompile Include="..\intern\cryptomatte.cc" />
+    <ClCompile Include="..\intern\cryptomatte_test.cc" />
+    <ClCompile Include="..\intern\curve.c" />
+    <ClCompile Include="..\intern\curveprofile.c" />
+    <ClCompile Include="..\intern\curve_bevel.c" />
+    <ClCompile Include="..\intern\curve_convert.c" />
+    <ClCompile Include="..\intern\curve_decimate.c" />
+    <ClCompile Include="..\intern\curve_deform.c" />
+    <ClCompile Include="..\intern\customdata.c" />
+    <ClCompile Include="..\intern\customdata_file.c" />
+    <ClCompile Include="..\intern\data_transfer.c" />
+    <ClCompile Include="..\intern\deform.c" />
+    <ClCompile Include="..\intern\DerivedMesh.cc" />
+    <ClCompile Include="..\intern\displist.cc" />
+    <ClCompile Include="..\intern\displist_tangent.c" />
+    <ClCompile Include="..\intern\dynamicpaint.c" />
+    <ClCompile Include="..\intern\editlattice.c" />
+    <ClCompile Include="..\intern\editmesh.c" />
+    <ClCompile Include="..\intern\editmesh_bvh.c" />
+    <ClCompile Include="..\intern\editmesh_cache.c" />
+    <ClCompile Include="..\intern\editmesh_tangent.c" />
+    <ClCompile Include="..\intern\effect.c" />
+    <ClCompile Include="..\intern\fcurve.c" />
+    <ClCompile Include="..\intern\fcurve_cache.c" />
+    <ClCompile Include="..\intern\fcurve_driver.c" />
+    <ClCompile Include="..\intern\fcurve_test.cc" />
+    <ClCompile Include="..\intern\fluid.c" />
+    <ClCompile Include="..\intern\fmodifier.c" />
+    <ClCompile Include="..\intern\font.c" />
+    <ClCompile Include="..\intern\freestyle.c" />
+    <ClCompile Include="..\intern\gpencil.c" />
+    <ClCompile Include="..\intern\gpencil_curve.c" />
+    <ClCompile Include="..\intern\gpencil_geom.c" />
+    <ClCompile Include="..\intern\gpencil_modifier.c" />
+    <ClCompile Include="..\intern\hair.c" />
+    <ClCompile Include="..\intern\icons.cc" />
+    <ClCompile Include="..\intern\icons_rasterize.c" />
+    <ClCompile Include="..\intern\idprop.c" />
+    <ClCompile Include="..\intern\idprop_utils.c" />
+    <ClCompile Include="..\intern\idtype.c" />
+    <ClCompile Include="..\intern\image.c" />
+    <ClCompile Include="..\intern\image_gen.c" />
+    <ClCompile Include="..\intern\image_gpu.c" />
+    <ClCompile Include="..\intern\image_save.c" />
+    <ClCompile Include="..\intern\ipo.c" />
+    <ClCompile Include="..\intern\kelvinlet.c" />
+    <ClCompile Include="..\intern\key.c" />
+    <ClCompile Include="..\intern\keyconfig.c" />
+    <ClCompile Include="..\intern\lattice.c" />
+    <ClCompile Include="..\intern\lattice_deform.c" />
+    <ClCompile Include="..\intern\lattice_deform_test.cc" />
+    <ClCompile Include="..\intern\layer.c" />
+    <ClCompile Include="..\intern\layer_test.cc" />
+    <ClCompile Include="..\intern\layer_utils.c" />
+    <ClCompile Include="..\intern\library.c" />
+    <ClCompile Include="..\intern\lib_id.c" />
+    <ClCompile Include="..\intern\lib_id_delete.c" />
+    <ClCompile Include="..\intern\lib_override.c" />
+    <ClCompile Include="..\intern\lib_query.c" />
+    <ClCompile Include="..\intern\lib_remap.c" />
+    <ClCompile Include="..\intern\light.c" />
+    <ClCompile Include="..\intern\lightprobe.c" />
+    <ClCompile Include="..\intern\linestyle.c" />
+    <ClCompile Include="..\intern\main.c" />
+    <ClCompile Include="..\intern\main_idmap.c" />
+    <ClCompile Include="..\intern\mask.c" />
+    <ClCompile Include="..\intern\mask_evaluate.c" />
+    <ClCompile Include="..\intern\mask_rasterize.c" />
+    <ClCompile Include="..\intern\material.c" />
+    <ClCompile Include="..\intern\mball.c" />
+    <ClCompile Include="..\intern\mball_tessellate.c" />
+    <ClCompile Include="..\intern\mesh.c" />
+    <ClCompile Include="..\intern\mesh_boolean_convert.cc" />
+    <ClCompile Include="..\intern\mesh_convert.c" />
+    <ClCompile Include="..\intern\mesh_evaluate.c" />
+    <ClCompile Include="..\intern\mesh_fair.cc" />
+    <ClCompile Include="..\intern\mesh_iterators.c" />
+    <ClCompile Include="..\intern\mesh_mapping.c" />
+    <ClCompile Include="..\intern\mesh_merge.c" />
+    <ClCompile Include="..\intern\mesh_mirror.c" />
+    <ClCompile Include="..\intern\mesh_remap.c" />
+    <ClCompile Include="..\intern\mesh_remesh_voxel.c" />
+    <ClCompile Include="..\intern\mesh_runtime.c" />
+    <ClCompile Include="..\intern\mesh_sample.cc" />
+    <ClCompile Include="..\intern\mesh_tangent.c" />
+    <ClCompile Include="..\intern\mesh_validate.c" />
+    <ClCompile Include="..\intern\mesh_validate.cc" />
+    <ClCompile Include="..\intern\mesh_wrapper.c" />
+    <ClCompile Include="..\intern\modifier.c" />
+    <ClCompile Include="..\intern\movieclip.c" />
+    <ClCompile Include="..\intern\multires.c" />
+    <ClCompile Include="..\intern\multires_reshape.c" />
+    <ClCompile Include="..\intern\multires_reshape_apply_base.c" />
+    <ClCompile Include="..\intern\multires_reshape_ccg.c" />
+    <ClCompile Include="..\intern\multires_reshape_smooth.c" />
+    <ClCompile Include="..\intern\multires_reshape_subdivide.c" />
+    <ClCompile Include="..\intern\multires_reshape_util.c" />
+    <ClCompile Include="..\intern\multires_reshape_vertcos.c" />
+    <ClCompile Include="..\intern\multires_subdiv.c" />
+    <ClCompile Include="..\intern\multires_unsubdivide.c" />
+    <ClCompile Include="..\intern\multires_versioning.c" />
+    <ClCompile Include="..\intern\nla.c" />
+    <ClCompile Include="..\intern\node.cc" />
+    <ClCompile Include="..\intern\node_ui_storage.cc" />
+    <ClCompile Include="..\intern\object.c" />
+    <ClCompile Include="..\intern\object_deform.c" />
+    <ClCompile Include="..\intern\object_dupli.cc" />
+    <ClCompile Include="..\intern\object_facemap.c" />
+    <ClCompile Include="..\intern\object_update.c" />
+    <ClCompile Include="..\intern\ocean.c" />
+    <ClCompile Include="..\intern\ocean_spectrum.c" />
+    <ClCompile Include="..\intern\outliner_treehash.c" />
+    <ClCompile Include="..\intern\packedFile.c" />
+    <ClCompile Include="..\intern\paint.c" />
+    <ClCompile Include="..\intern\paint_toolslots.c" />
+    <ClCompile Include="..\intern\particle.c" />
+    <ClCompile Include="..\intern\particle_child.c" />
+    <ClCompile Include="..\intern\particle_distribute.c" />
+    <ClCompile Include="..\intern\particle_system.c" />
+    <ClCompile Include="..\intern\pbvh.c" />
+    <ClCompile Include="..\intern\pbvh_bmesh.c" />
+    <ClCompile Include="..\intern\pointcache.c" />
+    <ClCompile Include="..\intern\pointcloud.cc" />
+    <ClCompile Include="..\intern\preferences.c" />
+    <ClCompile Include="..\intern\report.c" />
+    <ClCompile Include="..\intern\rigidbody.c" />
+    <ClCompile Include="..\intern\scene.c" />
+    <ClCompile Include="..\intern\screen.c" />
+    <ClCompile Include="..\intern\shader_fx.c" />
+    <ClCompile Include="..\intern\shrinkwrap.c" />
+    <ClCompile Include="..\intern\simulation.cc" />
+    <ClCompile Include="..\intern\softbody.c" />
+    <ClCompile Include="..\intern\sound.c" />
+    <ClCompile Include="..\intern\speaker.c" />
+    <ClCompile Include="..\intern\studiolight.c" />
+    <ClCompile Include="..\intern\subdiv.c" />
+    <ClCompile Include="..\intern\subdiv_ccg.c" />
+    <ClCompile Include="..\intern\subdiv_ccg_mask.c" />
+    <ClCompile Include="..\intern\subdiv_ccg_material.c" />
+    <ClCompile Include="..\intern\subdiv_converter.c" />
+    <ClCompile Include="..\intern\subdiv_converter_mesh.c" />
+    <ClCompile Include="..\intern\subdiv_deform.c" />
+    <ClCompile Include="..\intern\subdiv_displacement.c" />
+    <ClCompile Include="..\intern\subdiv_displacement_multires.c" />
+    <ClCompile Include="..\intern\subdiv_eval.c" />
+    <ClCompile Include="..\intern\subdiv_foreach.c" />
+    <ClCompile Include="..\intern\subdiv_mesh.c" />
+    <ClCompile Include="..\intern\subdiv_stats.c" />
+    <ClCompile Include="..\intern\subdiv_topology.c" />
+    <ClCompile Include="..\intern\subsurf_ccg.c" />
+    <ClCompile Include="..\intern\text.c" />
+    <ClCompile Include="..\intern\texture.c" />
+    <ClCompile Include="..\intern\text_suggestions.c" />
+    <ClCompile Include="..\intern\tracking.c" />
+    <ClCompile Include="..\intern\tracking_auto.c" />
+    <ClCompile Include="..\intern\tracking_detect.c" />
+    <ClCompile Include="..\intern\tracking_plane_tracker.c" />
+    <ClCompile Include="..\intern\tracking_region_tracker.c" />
+    <ClCompile Include="..\intern\tracking_solver.c" />
+    <ClCompile Include="..\intern\tracking_stabilize.c" />
+    <ClCompile Include="..\intern\tracking_test.cc" />
+    <ClCompile Include="..\intern\tracking_util.c" />
+    <ClCompile Include="..\intern\undo_system.c" />
+    <ClCompile Include="..\intern\unit.c" />
+    <ClCompile Include="..\intern\volume_render.cc" />
+    <ClCompile Include="..\intern\volume_to_mesh.cc" />
+    <ClCompile Include="..\intern\workspace.c" />
+    <ClCompile Include="..\intern\world.c" />
+    <ClCompile Include="..\intern\writeavi.c" />
+    <ClCompile Include="..\intern\writeffmpeg.c" />
+    <ClCompile Include="..\lib_id.c" />
+    <ClCompile Include="..\lib_id_delete.c" />
+    <ClCompile Include="..\lib_override.c" />
+    <ClCompile Include="..\lib_query.c" />
+    <ClCompile Include="..\lib_remap.c" />
+    <None Include="..\dna.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>CppCode</FileType>
+    </None>
     <ClCompile Include="..\dna_defaults.c" />
     <ClCompile Include="..\dna_genfile.c" />
     <ClCompile Include="..\dna_utils.c" />
+    <ClCompile Include="..\dot_export.cc" />
+    <ClCompile Include="..\dynlib.c" />
+    <ClCompile Include="..\easing.c" />
+    <ClCompile Include="..\edgehash.c" />
     <ClCompile Include="..\eigenvalues.cc" />
+    <ClCompile Include="..\endian_switch.c" />
+    <ClCompile Include="..\expr_pylike_eval.c" />
+    <ClCompile Include="..\fileops.c" />
+    <ClCompile Include="..\fnmatch.c" />
+    <None Include="..\freetypefont.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>CppCode</FileType>
+    </None>
+    <ClCompile Include="..\gsqueue.c" />
+    <ClCompile Include="..\hash_md5.c" />
+    <ClCompile Include="..\hash_mm2a.c" />
+    <ClCompile Include="..\hash_mm3.c" />
     <ClCompile Include="..\intern\geometry_component_instances.cc" />
     <ClCompile Include="..\intern\geometry_component_mesh.cc" />
     <ClCompile Include="..\intern\geometry_component_pointcloud.cc" />
@@ -398,16 +921,26 @@
     <ClCompile Include="..\intern\geometry_set_instances.cc" />
     <ClCompile Include="..\intern\leak_detector.cc" />
     <ClCompile Include="..\intern\mallocn.c" />
-    <ClCompile Include="..\intern\mallocn_guarded_impl.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\intern\mallocn_guarded_impl.c" />
     <ClCompile Include="..\intern\mallocn_lockfree_impl.c" />
     <ClCompile Include="..\intern\math_base_inline.c" />
     <ClCompile Include="..\intern\math_color_inline.c" />
+    <ClCompile Include="..\intern\math_geom_inline.c" />
     <ClCompile Include="..\intern\math_vector_inline.c" />
     <ClCompile Include="..\intern\volume.cc" />
+    <ClCompile Include="..\jitter_2d.c" />
+    <ClCompile Include="..\kdtree_1d.c" />
+    <ClCompile Include="..\kdtree_2d.c" />
+    <ClCompile Include="..\kdtree_3d.c" />
+    <ClCompile Include="..\kdtree_4d.c" />
+    <ClCompile Include="..\lasso_2d.c" />
+    <ClCompile Include="..\leak_detector.cc" />
     <ClCompile Include="..\linear_solver.cc" />
     <ClCompile Include="..\listbase.c" />
+    <ClCompile Include="..\makesdna.c" />
+    <ClCompile Include="..\mallocn.c" />
+    <ClCompile Include="..\mallocn_guarded_impl.c" />
+    <ClCompile Include="..\mallocn_lockfree_impl.c" />
     <ClCompile Include="..\math_base.c" />
     <ClCompile Include="..\math_base_inline.c" />
     <ClCompile Include="..\math_base_safe_inline.c" />
@@ -431,8 +964,152 @@
     <ClCompile Include="..\mesh_boolean.cc" />
     <ClCompile Include="..\mesh_intersect.cc" />
     <ClCompile Include="..\node_geo_transform.cc" />
+    <ClCompile Include="..\noise.c" />
+    <ClCompile Include="..\numaapi.c" />
+    <ClCompile Include="..\numaapi_win32.c" />
+    <ClCompile Include="..\path_util.c" />
+    <ClCompile Include="..\polyfill_2d.c" />
+    <ClCompile Include="..\polyfill_2d_beautify.c" />
+    <ClCompile Include="..\quadric.c" />
+    <ClCompile Include="..\rand.cc" />
+    <ClCompile Include="..\rct.c" />
+    <ClCompile Include="..\scanfill.c" />
+    <ClCompile Include="..\scanfill_utils.c" />
+    <ClCompile Include="..\session_uuid.c" />
+    <ClCompile Include="..\smallhash.c" />
+    <ClCompile Include="..\sort.c" />
+    <ClCompile Include="..\sort_utils.c" />
+    <ClCompile Include="..\stack.c" />
+    <ClCompile Include="..\storage.c" />
+    <ClCompile Include="..\string.c" />
+    <ClCompile Include="..\string_cursor_utf8.c" />
+    <ClCompile Include="..\string_search.cc" />
+    <ClCompile Include="..\string_utf8.c" />
+    <ClCompile Include="..\string_utils.c" />
     <ClCompile Include="..\svd.cc" />
+    <ClCompile Include="..\system.c" />
+    <ClCompile Include="..\system_win32.c" />
+    <ClCompile Include="..\task_graph.cc" />
+    <ClCompile Include="..\task_iterator.c" />
+    <ClCompile Include="..\task_pool.cc" />
+    <ClCompile Include="..\task_range.cc" />
+    <ClCompile Include="..\task_scheduler.cc" />
+    <ClCompile Include="..\threads.cc" />
+    <ClCompile Include="..\time.c" />
+    <ClCompile Include="..\timecode.c" />
+    <ClCompile Include="..\timeit.cc" />
+    <ClCompile Include="..\utfconv.c" />
+    <ClCompile Include="..\utf_winfunc.c" />
+    <ClCompile Include="..\uvproject.c" />
+    <ClCompile Include="..\voronoi_2d.c" />
+    <ClCompile Include="..\voxel.c" />
+    <ClCompile Include="..\wcwidth.c" />
+    <ClCompile Include="..\winstuff.c" />
+    <ClCompile Include="..\winstuff_dir.c" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\storage_apple.mm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6A4E4FE5-1C23-4DBA-8FAA-C22F82F09ACF}</ProjectGuid>
+    <RootNamespace>SeaSide</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\atomic_interns;$(ProjectDir)..\dna;$(ProjectDir)..\zlib;$(ProjectDir)..\pthread;C:\Users\kung\Desktop\blender-my\blender-master\extern\Eigen3;$(ProjectDir)..\ikplugin;$(ProjectDir)..\blenloader;$(ProjectDir)..\bmesh;$(ProjectDir)..\curve_fit_nd;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++17 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__LITTLE_ENDIAN__;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

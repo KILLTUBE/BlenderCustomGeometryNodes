@@ -13,308 +13,14 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="bmesh">
+      <UniqueIdentifier>{5f326854-8376-4051-9462-43596d1a8d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curvefitnd">
+      <UniqueIdentifier>{a9b0526f-a941-46cd-a6f0-3412fa3de093}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\BLI_float4x4.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\node_geometry_util.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_mesh.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_volume.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DEG_depsgraph_query.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_float3.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_matrix.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_compiler_attrs.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_sys_types.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_mesh_types.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_utildefines.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_compiler_compat.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_vector.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_utildefines_variadic.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_assert.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_inline.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_compiler_typecheck.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_base.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_geom.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_interp.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_color.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_rotation.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_solvers.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_math_statistics.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_simd.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_iterator.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DEG_depsgraph.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DEG_depsgraph_build.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\MEM_guardedalloc.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_node.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLT_translation.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\NOD_geometry.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\NOD_geometry_exec.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\node_util.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\NOD_socket.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_ghash.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RNA_types.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\FN_generic_value_map.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_attribute_access.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_geometry_set.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_geometry_set_instances.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_node_ui_storage.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_persistent_data_handle.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\NOD_derived_node_tree.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_function_ref.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_vector_set.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\NOD_node_tree_ref.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_array.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_linear_allocator.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_map.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_multi_value_map.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_string_ref.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_timeit.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_utility_mixins.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_vector.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RNA_access.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_span.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\FN_cpp_type.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\FN_generic_span.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\FN_generic_virtual_array.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_attribute.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_color.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_float2.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_hash.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_index_mask.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_index_range.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_memory_utils.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_allocator.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_listbase_wrapper.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_string.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_listbase.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_hash_tables.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_map_slots.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_probing_strategies.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\FN_generic_pointer.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_virtual_array.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_customdata.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_set.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_user_counter.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_geometry_set.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_set_slots.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_session_uuid.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_vector_set_slots.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\GPU_material.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\GPU_texture.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\GPU_state.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ccall.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_rand.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_attribute_math.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_deform.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_lib_id.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\attribute_access_intern.hh">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_pointcloud.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_mesh_wrapper.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BKE_modifier.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\intern\mallocn_inline.h">
-      <Filter>intern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\intern\mallocn_intern.h">
-      <Filter>intern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\BLI_strict_flags.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\atomic_ops.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
     <ClInclude Include="..\intern\atomic_ops_ext.h">
       <Filter>intern</Filter>
     </ClInclude>
@@ -327,19 +33,58 @@
     <ClInclude Include="..\intern\atomic_ops_utils.h">
       <Filter>intern</Filter>
     </ClInclude>
-    <ClInclude Include="..\BLI_fileops.h">
+    <ClInclude Include="..\intern\mallocn_inline.h">
+      <Filter>intern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\mallocn_intern.h">
+      <Filter>intern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wcwidth.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\BLI_path_util.h">
+    <ClInclude Include="..\atomic_ops.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\attribute_access_intern.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\basedir.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BKE_anim_data.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_attribute.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_attribute_access.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_attribute_math.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_customdata.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_deform.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_geometry_set.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_geometry_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_geometry_set_instances.hh">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BKE_global.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BKE_idtype.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_lib_id.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BKE_lib_query.h">
@@ -351,10 +96,34 @@
     <ClInclude Include="..\BKE_main.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\BKE_mesh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_wrapper.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_modifier.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_node.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_node_ui_storage.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
     <ClInclude Include="..\BKE_object.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BKE_packedFile.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_persistent_data_handle.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_pointcloud.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BKE_report.h">
@@ -363,31 +132,496 @@
     <ClInclude Include="..\BKE_scene.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\BLO_read_write.h">
+    <ClInclude Include="..\BKE_volume.h">
       <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\CLG_log.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DNA_windowmanager_types.h">
-      <Filter>intern</Filter>
     </ClInclude>
     <ClInclude Include="..\BLI_alloca.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_allocator.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_args.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_array.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_array_store.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_array_store_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_array_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_asan.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_assert.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_astar.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_bitmap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_bitmap_draw_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_blenlib.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_boxpack_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_buffer.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_color.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_compiler_attrs.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_compiler_compat.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_compiler_typecheck.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_console.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_convexhull_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_delaunay_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_dial_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_disjoint_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_dlrbTree.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_dot_export.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_dot_export_attribute_enums.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_double2.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_double3.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_dynlib.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_dynstr.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_easing.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_edgehash.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_endian_switch.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_endian_switch_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_expr_pylike_eval.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_fileops.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_fileops_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_float2.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_float3.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_float4x4.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_fnmatch.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_function_ref.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_ghash.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_gsqueue.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash_md5.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash_mm2a.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash_mm3.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_hash_tables.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_heap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_heap_simple.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_index_mask.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_index_range.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_inplace_priority_queue.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_iterator.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_jitter_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_kdopbvh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_kdtree.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_kdtree_impl.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_lasso_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_linear_allocator.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_link_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_linklist.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_linklist_lockfree.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_linklist_stack.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_listbase.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_listbase_wrapper.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_map.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_map_slots.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_base.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_base_safe.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_bits.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_boolean.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_color.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_color_blend.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_geom.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_interp.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_matrix.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_mpq.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_rotation.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_solvers.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_statistics.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_math_vector.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\BLI_memarena.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\BLI_memblock.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_memiter.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_memory_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_memory_utils.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_mempool.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_mesh_boolean.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_mesh_intersect.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_mmap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_mpq2.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_mpq3.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_multi_value_map.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_noise.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_path_util.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_polyfill_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_polyfill_2d_beautify.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_probing_strategies.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_quadric.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_rand.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_rand.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_rect.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_resource_scope.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_scanfill.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_session_uuid.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_set_slots.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_simd.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_smallhash.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_sort.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_sort_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_span.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_stack.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_stack.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_strict_flags.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string_cursor_utf8.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string_ref.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string_search.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string_utf8.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_string_utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_sys_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
     <ClInclude Include="..\BLI_system.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_task.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_task.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_threads.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_timecode.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_timeit.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_timer.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_user_counter.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utildefines.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utildefines_iter.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utildefines_stack.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utildefines_variadic.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_utility_mixins.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_uvproject.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector_adaptor.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector_set.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vector_set_slots.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_vfontdata.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_virtual_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_virtual_vector_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_voronoi_2d.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_voxel.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLI_winstuff.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLO_read_write.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BLT_translation.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\build_config.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccall.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CLG_log.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DEG_depsgraph.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DEG_depsgraph_build.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DEG_depsgraph_query.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\DNA_action_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\DNA_anim_types.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DNA_pointcloud_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\DNA_armature_defaults.h">
@@ -627,6 +861,12 @@
     <ClInclude Include="..\DNA_pointcloud_defaults.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\DNA_pointcloud_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dna_rename_defs.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
     <ClInclude Include="..\DNA_rigidbody_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
@@ -669,6 +909,9 @@
     <ClInclude Include="..\DNA_speaker_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\dna_struct_offsets.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
     <ClInclude Include="..\DNA_text_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
@@ -682,6 +925,9 @@
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\DNA_userdef_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dna_utils.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\DNA_vec_defaults.h">
@@ -711,6 +957,9 @@
     <ClInclude Include="..\DNA_volume_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\DNA_windowmanager_types.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
     <ClInclude Include="..\DNA_workspace_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
@@ -723,47 +972,662 @@
     <ClInclude Include="..\DNA_xr_types.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\BLI_endian_switch.h">
+    <ClInclude Include="..\eigen_capi.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\eigenvalues.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_cpp_type.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_pointer.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_span.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_value_map.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FN_generic_virtual_array.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GPU_material.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GPU_state.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GPU_texture.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\IMB_imbuf.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\BLI_endian_switch_inline.h">
+    <ClInclude Include="..\kdtree_impl.h">
       <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\eigen_capi.h">
-      <Filter>intern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\eigenvalues.h">
-      <Filter>intern</Filter>
     </ClInclude>
     <ClInclude Include="..\linear_solver.h">
-      <Filter>intern</Filter>
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\list_sort_impl.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mallocn_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mallocn_intern.h">
+      <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\matrix.h">
-      <Filter>intern</Filter>
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MEM_guardedalloc.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_derived_node_tree.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_geometry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_geometry_exec.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_node_tree_ref.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NOD_socket.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\node_geometry_util.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\node_util.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\numaapi.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PIL_time.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RNA_access.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RNA_types.h">
+      <Filter>Quelldateien</Filter>
     </ClInclude>
     <ClInclude Include="..\svd.h">
-      <Filter>intern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\dna_utils.h">
       <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utf_winfunc.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utfconv.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib_intern.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_armature.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_bpath.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_context.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_idprop.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_key.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_lib_override.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_rigidbody.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_asset.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_gpencil.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_gpencil_curve.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_gpencil_geom.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_gpencil_modifier.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_library.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_collection.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_layer.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_curve.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_curveprofile.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_material.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mball.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mball_tessellate.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_multires.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subsurf.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\multires_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\multires_reshape.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\multires_unsubdivide.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\pbvh_intern.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\subdiv_converter.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\subdiv_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\attribute_access_intern.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\CCGSubSurf.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\CCGSubSurf_inline.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\CCGSubSurf_intern.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\data_transfer_intern.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\lib_intern.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intern\ocean_intern.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_anim_path.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_anim_visualization.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_animsys.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_appdir.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_autoexec.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_blender.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_blender_copybuffer.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_blender_undo.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_blender_user_menu.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_blender_version.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_blendfile.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_boids.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_brush.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_bvhutils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_cachefile.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_callbacks.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_camera.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_ccg.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_cdderivedmesh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_cloth.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_collision.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_colorband.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_colortools.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_constraint.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_crazyspace.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_cryptomatte.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_cryptomatte.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_customdata_file.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_data_transfer.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_DerivedMesh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_displist.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_displist_tangent.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_duplilist.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_dynamicpaint.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_editlattice.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_editmesh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_editmesh_bvh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_editmesh_cache.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_editmesh_tangent.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_effect.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_fcurve.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_fcurve_driver.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_fluid.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_font.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_freestyle.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_hair.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_icons.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_image.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_image_save.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_ipo.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_kelvinlet.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_keyconfig.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_lattice.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_light.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_lightprobe.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_linestyle.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_main_idmap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mask.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_boolean_convert.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_fair.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_iterators.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_mapping.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_mirror.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_remap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_remesh_voxel.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_runtime.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_sample.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_mesh_tangent.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_movieclip.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_nla.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_object_deform.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_object_facemap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_ocean.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_outliner_treehash.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_paint.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_particle.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_pbvh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_pointcache.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_preferences.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_screen.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_sequencer_offscreen.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_shader_fx.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_shrinkwrap.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_simulation.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_softbody.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_sound.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_speaker.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_studiolight.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv_ccg.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv_deform.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv_eval.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv_foreach.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv_mesh.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_subdiv_topology.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_text.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_text_suggestions.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_texture.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_tracking.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_undo_system.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_unit.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_volume_render.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_volume_to_mesh.hh">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_workspace.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_world.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_writeavi.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_writeffmpeg.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nla_private.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\particle_private.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking_private.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_action.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BKE_addon.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ikplugin\intern\ikplugin_api.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ikplugin\intern\iksolver_plugin.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ikplugin\intern\itasc_plugin.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blenloader\intern\readfile.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh_convert.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh_duplicate.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh_validate.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_mods.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_operator_api.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_operator_api_inline.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_operators.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_operators_private.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_polygon.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_polygon_edgenet.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_private.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_query.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_query_inline.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_query_uv.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_structure.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_structure_inline.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_walkers.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_walkers_private.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_callback_generic.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_construct.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_core.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_delete.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_edgeloop.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_error.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_inline.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_interp.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_iterators.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_iterators_inline.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_log.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_marking.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmesh\intern\bmesh_mesh.h">
+      <Filter>bmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\curve_fit_nd\intern\curve_fit_inline.h">
+      <Filter>curvefitnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\curve_fit_nd\intern\generic_alloc_impl.h">
+      <Filter>curvefitnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\curve_fit_nd\intern\generic_heap.h">
+      <Filter>curvefitnd</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\node_geo_transform.cc">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\intern\math_vector_inline.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\intern\math_base_inline.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\intern\math_color_inline.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="..\intern\geometry_component_instances.cc">
       <Filter>intern</Filter>
     </ClCompile>
@@ -794,13 +1658,67 @@
     <ClCompile Include="..\intern\mallocn_lockfree_impl.c">
       <Filter>intern</Filter>
     </ClCompile>
+    <ClCompile Include="..\intern\math_base_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\math_color_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\math_geom_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\math_vector_inline.c">
+      <Filter>intern</Filter>
+    </ClCompile>
     <ClCompile Include="..\intern\volume.cc">
       <Filter>intern</Filter>
     </ClCompile>
-    <ClCompile Include="..\dna_defaults.c">
+    <ClCompile Include="..\voxel.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\dna_genfile.c">
+    <ClCompile Include="..\wcwidth.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winstuff.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winstuff_dir.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\array_store.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\array_store_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\array_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\astar.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bitmap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bitmap_draw_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BLI_args.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BLI_array.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BLI_assert.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BLI_dial_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BLI_dynstr.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BLI_filelist.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="..\BLI_ghash.c">
@@ -845,104 +1763,1207 @@
     <ClCompile Include="..\BLI_timer.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\BLI_args.c">
+    <ClCompile Include="..\boxpack_2d.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\BLI_array.c">
+    <ClCompile Include="..\buffer.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\BLI_assert.c">
+    <ClCompile Include="..\convexhull_2d.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\BLI_dial_2d.c">
+    <ClCompile Include="..\delaunay_2d.cc">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\BLI_dynstr.c">
+    <ClCompile Include="..\DLRB_tree.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\BLI_filelist.c">
+    <ClCompile Include="..\dna.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\math_geom.c">
-      <Filter>intern</Filter>
+    <ClCompile Include="..\dna_defaults.c">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\math_geom_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_interp.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_matrix.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_rotation.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_solvers.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_statistics.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_vec.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_vector.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_vector_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\memory_utils.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\mesh_boolean.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\mesh_intersect.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\listbase.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_base.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_base_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_base_safe_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_bits_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_boolean.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_color.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_color_blend_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\math_color_inline.c">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\eigenvalues.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\linear_solver.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\matrix.cc">
-      <Filter>intern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\svd.cc">
-      <Filter>intern</Filter>
+    <ClCompile Include="..\dna_genfile.c">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="..\dna_utils.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\dot_export.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dynlib.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\easing.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\edgehash.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\eigenvalues.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\endian_switch.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\expr_pylike_eval.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fileops.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnmatch.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freetypefont.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gsqueue.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hash_md5.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hash_mm2a.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hash_mm3.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jitter_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kdtree_1d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kdtree_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kdtree_3d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kdtree_4d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lasso_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leak_detector.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear_solver.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\listbase.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\makesdna.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mallocn.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mallocn_guarded_impl.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mallocn_lockfree_impl.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_base.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_base_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_base_safe_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_bits_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_boolean.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_color.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_color_blend_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_color_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_geom.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_geom_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_interp.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_matrix.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_rotation.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_solvers.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_statistics.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_vec.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_vector.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math_vector_inline.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\matrix.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mesh_boolean.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mesh_intersect.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\node_geo_transform.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\noise.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\numaapi.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\numaapi_win32.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\path_util.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\polyfill_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\polyfill_2d_beautify.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\quadric.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rand.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rct.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scanfill.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scanfill_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\session_uuid.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\smallhash.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sort.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sort_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stack.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\storage.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\string.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\string_cursor_utf8.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\string_search.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\string_utf8.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\string_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\svd.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\system.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\system_win32.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task_graph.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task_iterator.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task_pool.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task_range.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task_scheduler.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threads.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\time.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\timecode.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\timeit.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utf_winfunc.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utfconv.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\uvproject.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\voronoi_2d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib_id.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib_id_delete.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib_override.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib_query.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib_remap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape_apply_base.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape_ccg.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape_smooth.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape_subdivide.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape_util.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_reshape_vertcos.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_subdiv.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_unsubdivide.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\multires_versioning.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\paint.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\paint_toolslots.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\particle.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\particle_child.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\particle_distribute.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\particle_system.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\pbvh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\pbvh_bmesh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\pointcache.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\pointcloud.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\preferences.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\report.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\rigidbody.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\scene.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\screen.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\shader_fx.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\shrinkwrap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\simulation.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\softbody.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\sound.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\speaker.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\studiolight.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_ccg.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_ccg_mask.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_ccg_material.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_converter.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_converter_mesh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_deform.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_displacement.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_displacement_multires.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_eval.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_foreach.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_mesh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_stats.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subdiv_topology.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\subsurf_ccg.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\text.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\text_suggestions.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\texture.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_auto.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_detect.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_plane_tracker.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_region_tracker.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_solver.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_stabilize.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_test.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\tracking_util.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\undo_system.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\unit.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\volume_render.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\volume_to_mesh.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\workspace.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\world.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\writeavi.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\writeffmpeg.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\action.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\action_mirror.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\addon.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\anim_data.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\anim_path.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\anim_sys.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\anim_visualization.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\appdir.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\armature.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\armature_deform.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\armature_pose.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\armature_test.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\armature_update.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\asset.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\attribute.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\attribute_access.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\attribute_math.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\autoexec.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\blender.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\blender_copybuffer.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\blender_undo.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\blender_user_menu.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\blendfile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\boids.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\bpath.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\brush.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\bvhutils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\cachefile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\callbacks.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\camera.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\CCGSubSurf.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\CCGSubSurf_legacy.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\CCGSubSurf_util.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\cdderivedmesh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\cloth.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\collection.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\collision.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\colorband.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\colortools.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\constraint.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\context.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\crazyspace.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\cryptomatte.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\cryptomatte_test.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\curve.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\curve_bevel.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\curve_convert.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\curve_decimate.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\curve_deform.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\curveprofile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\customdata.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\customdata_file.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\data_transfer.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\deform.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\DerivedMesh.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\displist.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\displist_tangent.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\dynamicpaint.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\editlattice.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\editmesh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\editmesh_bvh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\editmesh_cache.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\editmesh_tangent.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\effect.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\fcurve.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\fcurve_cache.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\fcurve_driver.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\fcurve_test.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\fluid.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\fmodifier.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\font.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\freestyle.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\gpencil.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\gpencil_curve.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\gpencil_geom.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\gpencil_modifier.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\hair.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\icons.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\icons_rasterize.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\idprop.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\idprop_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\idtype.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\image.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\image_gen.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\image_gpu.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\image_save.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\ipo.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\kelvinlet.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\key.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\keyconfig.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lattice.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lattice_deform.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lattice_deform_test.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\layer.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\layer_test.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\layer_utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lib_id.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lib_id_delete.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lib_override.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lib_query.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lib_remap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\library.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\light.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\lightprobe.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\linestyle.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\main.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\main_idmap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mask.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mask_evaluate.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mask_rasterize.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\material.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mball.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mball_tessellate.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_boolean_convert.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_convert.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_evaluate.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_fair.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_iterators.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_mapping.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_merge.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_mirror.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_remap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_remesh_voxel.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_runtime.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_sample.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_tangent.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_validate.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_validate.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\mesh_wrapper.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\modifier.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\movieclip.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\nla.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\node.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\node_ui_storage.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\object.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\object_deform.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\object_dupli.cc">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\object_facemap.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\object_update.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\ocean.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\ocean_spectrum.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\outliner_treehash.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intern\packedFile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ikplugin\intern\ikplugin_api.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ikplugin\intern\iksolver_plugin.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ikplugin\intern\itasc_plugin.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\blend_validate.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\readblenentry.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\readfile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\readfile_tempload.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\undofile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_250.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_260.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_270.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_280.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_290.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_300.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_cycles.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_defaults.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_dna.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_legacy.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\versioning_userdef.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blenloader\intern\writefile.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh_convert.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh_duplicate.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh_validate.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_mods.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_opdefines.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_operators.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_polygon.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_polygon_edgenet.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_query.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_query_uv.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_structure.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_walkers.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_walkers_impl.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_callback_generic.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_construct.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_core.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_delete.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_edgeloop.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_interp.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_iterators.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_log.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_marking.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\intern\bmesh_mesh.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_beautify.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_bevel.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_bisect_plane.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_bridge.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_connect.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_connect_concave.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_connect_nonplanar.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_connect_pair.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_create.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_dissolve.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_dupe.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_edgenet.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_extrude.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_fill_attribute.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_fill_edgeloop.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_fill_grid.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_fill_holes.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_hull.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_inset.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_join_triangles.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_mesh_convert.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_mirror.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_normals.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_offset_edgeloops.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_planar_faces.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_poke.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_primitive.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_removedoubles.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_rotate_edges.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_smooth_laplacian.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_split_edges.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_subdivide.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_subdivide_edgering.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_symmetrize.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_triangulate.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_unsubdivide.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_utils.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmesh\operators\bmo_wireframe.c">
+      <Filter>bmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\curve_fit_nd\intern\curve_fit_corners_detect.c">
+      <Filter>curvefitnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\curve_fit_nd\intern\curve_fit_cubic.c">
+      <Filter>curvefitnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\curve_fit_nd\intern\curve_fit_cubic_refit.c">
+      <Filter>curvefitnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\curve_fit_nd\intern\generic_heap.c">
+      <Filter>curvefitnd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\storage_apple.mm">
+      <Filter>Quelldateien</Filter>
+    </None>
   </ItemGroup>
 </Project>
